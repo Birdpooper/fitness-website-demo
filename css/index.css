@@ -774,3 +774,41 @@ img {
 .container-for-call-to-action p {
     width: 50vw;
 }
+
+/*Total responsiveness*/
+
+@media(max-width:523px) {
+    .main-hero-background {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:802px) {
+    .service {
+        font-size: 15px
+    }
+}
+
+@media(max-width:641px) {
+    .service {
+        font-size: 10px
+    }
+}
+
+@media(max-width:919px) {
+    .main-program-background {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:559px) {
+    .main-program-background {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:1202px) {
+    .container-for-call-to-action {
+        font-size: .9rem;
+    }
+}
