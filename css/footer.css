@@ -165,10 +165,12 @@ footer .bottom-details .bottom_text{
     font-size: 26px;
   }
   .content .top .icons a{
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    line-height: 35px;
+    height: 50px;
+    width: 50px;
+  }
+  .content .top .icons a i{
+    font-size: 40px;
+    line-height: 10px;
   }
   .bottom-details .bottom_text span,
   .bottom-details .bottom_text a{
