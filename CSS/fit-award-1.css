@@ -352,3 +352,15 @@ footer .icons a i {
     align-items: center;
     justify-content: center;
 }
+@media (max-width:700px){
+    .main-hero-background h1{
+        font-size: 50px;
+        margin-left: 3%;
+    }
+    .container-for-award-1 h1{
+        margin-top: 40vw;
+    }
+    .container-for-award-1 {
+        margin-bottom: 39vw;
+    }
+}
