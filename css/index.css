@@ -681,6 +681,13 @@ img {
     .text-blk.name {
         font-size: 17px;
     }
+  
+}
+@media (max-width:700px) {
+    .content .top .icons a i{
+        font-size: 40px;
+        line-height: 10px;
+      }
 }
 
 @media (max-width: 500px) {
