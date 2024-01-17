@@ -1,0 +1,202 @@
+.container-for-trainer-1 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-2 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-3 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-4 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-5 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-6 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-7 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-8 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.container-for-trainer-9 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.img-of-trainer-1 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/Abhinav-Malhotra-Founder-and-Coach-Team-AbhiFit-Personal-Trainer-in-Dubai-UAE.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-trainer-2 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/Syed.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img-of-trainer-3 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/Vasoo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-trainer-4 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/jazz.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-trainer-5 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/Mithun.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-trainer-6 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/Raghav.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-trainer-7 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/mamta.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-trainer-8 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/mumez.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-of-trainer-9 {
+
+    height: 40vh;
+    width: 40vh;
+    background: url(../Images/Vijay.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-container-for-trainer {
+    width: 45vw;
+}
+
+.bottom-text-for-trainers {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70vw;
+}
+
+.bottom-text-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+@media(max-width:1194px) {
+
+    .container-for-trainer-1,
+    .container-for-trainer-3,
+    .container-for-trainer-5,
+    .container-for-trainer-7,
+    .container-for-trainer-9 {
+        flex-direction: column;
+        font-size: 10px;
+        margin-bottom: 10vh;
+        height: auto;
+    }
+
+    .container-for-trainer-2,
+    .container-for-trainer-4,
+    .container-for-trainer-6,
+    .container-for-trainer-8 {
+        flex-direction: column-reverse;
+        font-size: 10px;
+        margin-bottom: 10vh;
+        height: auto;
+    }
+
+    .main-hero-background h1 {
+        font-size: 5rem;
+
+    }
+}
