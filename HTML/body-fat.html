@@ -13,10 +13,24 @@
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
-    <title>Personal Training | AbhiFit</title>
+    <title>Body Fat Calculator | AbhiFit</title>
+    <link rel="stylesheet" href="../css/preloader.css">
 </head>
 
 <body>
+        <!-- Preloader Start -->
+<div class="loader-bg">
+	<div class="loader"></div>
+</div>
+    <!-- Preloader End -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  setTimeout(function(){
+	$('.loader-bg').fadeToggle();
+    }, 1000);
+</script>
     <nav>
         <div class="wrapper1">
             <div class="logo"><a href="#">AbhiFit</a></div>
@@ -81,7 +95,7 @@
 
     <!--Hero Page-->
     <div class="main-hero-background">
-        <h1>BMI</h1>
+        <h1>Body Fat</h1>
         <div class="US">
             <h1>Calculator</h1>
         </div>

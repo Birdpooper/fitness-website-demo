@@ -1,386 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="../CSS/about.css">
-    <link rel="icon" type="image/x-icon" href="/images/main.jpg">
+  <head>
+    <link rel="stylesheet" href="../css/preloader.css" />
+    <link rel="stylesheet" href="../CSS/about.css" />
+    <link rel="icon" type="image/x-icon" href="/images/main.jpg" />
     <link rel="stylesheet" href="../CSS/navbar.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../CSS/contact.css" />
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | AbhiFit</title>
-</head>
+    <title>About | AbhiFit</title>
+  </head>
 
-<body>
+  <body>
+    <!-- Preloader Start -->
+    <div class="loader-bg">
+      <div class="loader"></div>
+    </div>
+    <!-- Preloader End -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader-bg").fadeToggle();
+      }, 1000);
+    </script>
+
     <nav>
-        <div class="wrapper">
-            <div class="logo"><a href="#">AbhiFit</a></div>
-            <input type="radio" name="slider" id="menu-btn" />
-            <input type="radio" name="slider" id="close-btn" />
-            <ul class="nav-links">
-                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li><a href="../html/index.html">Home</a></li>
-                <li><a href="../html/about.html">About</a></li>
+      <div class="wrapper">
+        <div class="logo"><a href="#">AbhiFit</a></div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/about.html">About</a></li>
 
-                <li><a href="../html/Testimonials.html">Testimonials</a></li>
-                <li>
-                    <a href="#" class="desktop-item">Fit Awards</a>
-                    <input type="checkbox" id="showDrop" />
-                    <label for="showDrop" class="mobile-item">Fit Awards</label>
-                    <ul class="drop-menu">
-                        <li><a href="../HTML/fit-award-2019.html">Top Personal Trainer UAE 2019</a></li>
-                        <li><a href="../HTML/top-trainer-uae.html">Top 10 Personal Trainer UAE 2018</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="desktop-item">Services</a>
-                    <input type="checkbox" id="showMega" />
-                    <label for="showMega" class="mobile-item">Services</label>
-                    <div class="mega-box">
-                        <div class="content">
-                            <div class="row">
-                                <img src="../images/main.jpg" alt="" />
-                            </div>
-                            <div class="row">
-                                <header>Our Services</header>
-                                <ul class="mega-links">
-                                    <li><a href="../html/Personal Training.html">Personal Training</a></li>
-                                    <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
-                                    <li><a href="../html/Media.html">Media</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Calculator</header>
-                                <ul class="mega-links">
-                                    <li><a href="../HTML/body-fat.html">US Navy Body Fat (%) Calculator</a></li>
-                                    <li><a href="../HTML/bmi-calculator.html">BMI Calculator</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Blog</header>
-                                <ul class="mega-links">
-                                    <li><a href="#">All Posts</a></li>
-                                    <li><a href="#">Children</a></li>
-                                    <li><a href="#">Men</a></li>
-                                    <li><a href="#">Women</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="../html/contact page.html">Contact</a></li>
+          <li><a href="../html/Testimonials.html">Testimonials</a></li>
+          <li>
+            <a href="#" class="desktop-item">Fit Awards</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Fit Awards</label>
+            <ul class="drop-menu">
+              <li>
+                <a href="../HTML/fit-award-2019.html"
+                  >Top Personal Trainer UAE 2019</a
+                >
+              </li>
+              <li>
+                <a href="../HTML/top-trainer-uae.html"
+                  >Top 10 Personal Trainer UAE 2018</a
+                >
+              </li>
             </ul>
-            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-        </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Services</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Services</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/main.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Our Services</header>
+                  <ul class="mega-links">
+                    <li>
+                      <a href="../html/Personal Training.html"
+                        >Personal Training</a
+                      >
+                    </li>
+                    <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
+                    <li><a href="../html/Media.html">Media</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Calculator</header>
+                  <ul class="mega-links">
+                    <li>
+                      <a href="../HTML/body-fat.html"
+                        >US Navy Body Fat (%) Calculator</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../HTML/bmi-calculator.html">BMI Calculator</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Blog</header>
+                  <ul class="mega-links">
+                    <li><a href="#">All Posts</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="../html/contact page.html">Contact</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
     </nav>
 
     <!--Hero Page-->
     <div class="main-hero-background">
-        <h1>About</h1>
-        <div class="US">
-            <h1>US</h1>
-        </div>
-    </div><br><br>
+      <h1>About</h1>
+      <div class="US">
+        <h1>US</h1>
+      </div>
+    </div>
+    <br /><br />
 
-    <center style="margin-bottom: 10vh;">
-        <h1>Abhifit is the best personal training team in Dubai</h1>
+    <center style="margin-bottom: 10vh">
+      <h1>Abhifit is the best personal training team in Dubai</h1>
     </center>
-    <div class="container-for-trainer-1 ">
-        <div class="img-of-trainer-1"></div>
-        <div class="text-container-for-trainer">
-            <h2>Abhinav Malhotra</h2>
-            <h3>Founder, Coach</h3>
-            <p>Abhinav Malhotra is one of the most sought after fitness consultants & personal trainer in Dubai and
-                online. He’s the
-                founder of AbhiFit Lifestyle Coaching Co. in Dubai.
-
-                Abhinav Malhotra has been recognized as the top personal trainer of UAE (Dubai & All Emirates) by the
-                prestigious FIT
-                AWARDS 2019. Abhinav has been an Elite Master Personal Trainer at Fitness First in Dubai, UAE.
-
-                Abhinav has been a member of the “Panel of Experts” by FRIDAY MAGAZINE (Gulf News) where he has
-                regularly written
-                answers to fitness queries by the readers in “ASK THE EXPERTS” column. He is also a regular columnist
-                for BETTER HEALTH
-                magazine by Dubai Health Authority.
-
-                AbhiFit means Get Fit Now and it is Abhinav’s brand to make people achieve their fitness goals. </p>
-        </div>
+    <div class="container-for-trainer-1">
+      <div class="img-of-trainer-1"></div>
+      <div class="text-container-for-trainer">
+        <h2>Abhinav Malhotra</h2>
+        <h3>Founder, Coach</h3>
+        <p>
+          Abhinav Malhotra is one of the most sought after fitness consultants &
+          personal trainer in Dubai and online. He’s the founder of AbhiFit
+          Lifestyle Coaching Co. in Dubai. Abhinav Malhotra has been recognized
+          as the top personal trainer of UAE (Dubai & All Emirates) by the
+          prestigious FIT AWARDS 2019. Abhinav has been an Elite Master Personal
+          Trainer at Fitness First in Dubai, UAE. Abhinav has been a member of
+          the “Panel of Experts” by FRIDAY MAGAZINE (Gulf News) where he has
+          regularly written answers to fitness queries by the readers in “ASK
+          THE EXPERTS” column. He is also a regular columnist for BETTER HEALTH
+          magazine by Dubai Health Authority. AbhiFit means Get Fit Now and it
+          is Abhinav’s brand to make people achieve their fitness goals.
+        </p>
+      </div>
     </div>
-    <div class="container-for-trainer-2 ">
-        <div class="text-container-for-trainer">
-            <h2>Syed</h2>
-            <h3>Mentor and master trainer</h3>
-            <p>Personal Trainer with 12 years of experience. Have been working in UAE for a decade and helping clients
-                to
-                achieve better lives. I’m a co-founder of TEAM ABHIFIT in Dubai, working as TEAM MENTOR & MASTER
-                TRAINER. My specialities and area of expertise are Rehab, Diabetes and Obesity, Bodybuilding Contest
-                Prep and Postural & Corrective Exercise. Over a decade I have trained hundreds of clients and helped
-                them achieve their fitness goals making them pain free and correcting their postural imbalances.</p>
-        </div>
-        <div class="img-of-trainer-2"></div>
+    <div class="container-for-trainer-2">
+      <div class="text-container-for-trainer">
+        <h2>Syed</h2>
+        <h3>Mentor and master trainer</h3>
+        <p>
+          Personal Trainer with 12 years of experience. Have been working in UAE
+          for a decade and helping clients to achieve better lives. I’m a
+          co-founder of TEAM ABHIFIT in Dubai, working as TEAM MENTOR & MASTER
+          TRAINER. My specialities and area of expertise are Rehab, Diabetes and
+          Obesity, Bodybuilding Contest Prep and Postural & Corrective Exercise.
+          Over a decade I have trained hundreds of clients and helped them
+          achieve their fitness goals making them pain free and correcting their
+          postural imbalances.
+        </p>
+      </div>
+      <div class="img-of-trainer-2"></div>
     </div>
-    <div class="container-for-trainer-3 ">
-        <div class="img-of-trainer-3"></div>
-        <div class="text-container-for-trainer">
-            <h2>Vasoo Chitwadgi</h2>
-            <h3>Master trainer</h3>
-            <p>Vasoo is a fitness coach with 13 years of experience helping clients of all ages and levels of fitness
-                improve their
-                health and well-being.
-
-                He has developed and implemented individualized fitness programs based on client goals, and educated
-                clients on proper
-                nutrition and healthy lifestyle choices. Vasoo also has experience developing and implementing training
-                programs for a
-                variety of athletes.
-
-                He is knowledgeable about exercise science and related physiological concepts and is skilled in
-                designing and
-                implementing training programs. </p>
-        </div>
+    <div class="container-for-trainer-3">
+      <div class="img-of-trainer-3"></div>
+      <div class="text-container-for-trainer">
+        <h2>Vasoo Chitwadgi</h2>
+        <h3>Master trainer</h3>
+        <p>
+          Vasoo is a fitness coach with 13 years of experience helping clients
+          of all ages and levels of fitness improve their health and well-being.
+          He has developed and implemented individualized fitness programs based
+          on client goals, and educated clients on proper nutrition and healthy
+          lifestyle choices. Vasoo also has experience developing and
+          implementing training programs for a variety of athletes. He is
+          knowledgeable about exercise science and related physiological
+          concepts and is skilled in designing and implementing training
+          programs.
+        </p>
+      </div>
     </div>
     <div class="container-for-trainer-4">
-
-        <div class="text-container-for-trainer">
-            <h2>Jazz</h2>
-            <h3>Strength and conditioning coach</h3>
-            <p>Jaishree Choudhry, or Jazz as she is commonly known, is a highly experienced and certified fitness
-                professional. For the
-                past 5 years, she has been helping people achieve their fitness and health goals, whether it be fat
-                loss, muscle gain,
-                or Women’s suffering from PCOS, which is very common these days.
-
-                Jazz believes that there is nothing more important than health. That is why she specializes in kids’
-                strength training
-                too. Because she knows that if we start instilling healthy habits in children from a young age, they
-                will carry those
-                habits with them into adulthood.
-
-                Jazz always says “SWEAT TODAY SMILE TOMORROW” because she knows that the hard work you put in today will
-                pay off
-                tomorrow. So if you are looking for a qualified and experienced fitness professional to help you achieve
-                your goals,
-                look no further than Jaishree Choudhry!. </p>
-        </div>
-        <div class="img-of-trainer-4"></div>
+      <div class="text-container-for-trainer">
+        <h2>Jazz</h2>
+        <h3>Strength and conditioning coach</h3>
+        <p>
+          Jaishree Choudhry, or Jazz as she is commonly known, is a highly
+          experienced and certified fitness professional. For the past 5 years,
+          she has been helping people achieve their fitness and health goals,
+          whether it be fat loss, muscle gain, or Women’s suffering from PCOS,
+          which is very common these days. Jazz believes that there is nothing
+          more important than health. That is why she specializes in kids’
+          strength training too. Because she knows that if we start instilling
+          healthy habits in children from a young age, they will carry those
+          habits with them into adulthood. Jazz always says “SWEAT TODAY SMILE
+          TOMORROW” because she knows that the hard work you put in today will
+          pay off tomorrow. So if you are looking for a qualified and
+          experienced fitness professional to help you achieve your goals, look
+          no further than Jaishree Choudhry!.
+        </p>
+      </div>
+      <div class="img-of-trainer-4"></div>
     </div>
-    <div class="container-for-trainer-5 ">
-        <div class="img-of-trainer-5"></div>
-        <div class="text-container-for-trainer">
-            <h2>Mithun Mohan</h2>
-            <h3>Personal trainer and olympic weightlifting coah</h3>
-            <p>Having played sports for half my life, I suffered multiple injuries to which I had no answers or
-                solutions to get back
-                to the game other than taking rest. This is when a wise man introduced me to the gym, his words ” get
-                strong here and
-                showcase it on the field”.
-
-                Over the years I began going through numerous forms of training methods which made me lean towards
-                strength sports. I
-                began with the powerlifting methods and later on switched to Olympic lifting. It gave me a greater
-                insight into
-                biomechanics, exercise physiology, and a surface level of pain science.
-
-                At this point in time, I would say my strength is that I can manifest the physical potential of an
-                individual and
-                inculcate the habit of training throughout their life. </p>
-        </div>
+    <div class="container-for-trainer-5">
+      <div class="img-of-trainer-5"></div>
+      <div class="text-container-for-trainer">
+        <h2>Mithun Mohan</h2>
+        <h3>Personal trainer and olympic weightlifting coah</h3>
+        <p>
+          Having played sports for half my life, I suffered multiple injuries to
+          which I had no answers or solutions to get back to the game other than
+          taking rest. This is when a wise man introduced me to the gym, his
+          words ” get strong here and showcase it on the field”. Over the years
+          I began going through numerous forms of training methods which made me
+          lean towards strength sports. I began with the powerlifting methods
+          and later on switched to Olympic lifting. It gave me a greater insight
+          into biomechanics, exercise physiology, and a surface level of pain
+          science. At this point in time, I would say my strength is that I can
+          manifest the physical potential of an individual and inculcate the
+          habit of training throughout their life.
+        </p>
+      </div>
     </div>
-    <div class="container-for-trainer-6 ">
-
-        <div class="text-container-for-trainer">
-            <h2>Raghav Pathania</h2>
-            <h3>Strength and conditioning coach</h3>
-            <p>I started my journey as a sports person in 2011 ( Having played sports for 8 years ) and at that time I
-                had a lot of
-                questions I had in my mind about my sports journey. One thing I have experienced about the importance of
-                the right coach
-                and the right direction with the right knowledge.
-
-                Working as a personal trainer since 2019.
-
-                I do believe in making a transformative impact on lifestyles with the best workout formats that are
-                innovative,
-                exciting, and engaging and constantly strive towards continuously improving and exceeding the experience
-                that we provide
-                to our clients. With knowledge and well experience to give the right fitness training and valuable
-                advice.
-
-                This means going out of the way, pushing ourselves beyond our comfort zone, and being patient and open
-                to feedback.
-
-                Our mind and body are our most unique assets and there is no limit to what our mind and body can become.
-                While we work
-                towards powering a great body, I believe a true revolution starts from within.
-
-                Let’s take a step forward and give the responsibility to transform you. </p>
-        </div>
-        <div class="img-of-trainer-6"></div>
+    <div class="container-for-trainer-6">
+      <div class="text-container-for-trainer">
+        <h2>Raghav Pathania</h2>
+        <h3>Strength and conditioning coach</h3>
+        <p>
+          I started my journey as a sports person in 2011 ( Having played sports
+          for 8 years ) and at that time I had a lot of questions I had in my
+          mind about my sports journey. One thing I have experienced about the
+          importance of the right coach and the right direction with the right
+          knowledge. Working as a personal trainer since 2019. I do believe in
+          making a transformative impact on lifestyles with the best workout
+          formats that are innovative, exciting, and engaging and constantly
+          strive towards continuously improving and exceeding the experience
+          that we provide to our clients. With knowledge and well experience to
+          give the right fitness training and valuable advice. This means going
+          out of the way, pushing ourselves beyond our comfort zone, and being
+          patient and open to feedback. Our mind and body are our most unique
+          assets and there is no limit to what our mind and body can become.
+          While we work towards powering a great body, I believe a true
+          revolution starts from within. Let’s take a step forward and give the
+          responsibility to transform you.
+        </p>
+      </div>
+      <div class="img-of-trainer-6"></div>
     </div>
-    <div class="container-for-trainer-7 ">
-        <div class="img-of-trainer-7"></div>
-        <div class="text-container-for-trainer">
-            <h2>Mamta Rana</h2>
-            <h3>Boxing and strength conditioning coach</h3>
-            <p>Hi, I’m Mamta Rana a certified Strength & Conditioning and Rehabilitation personal trainer committed to
-                helping you
-                achieve your fitness goals and transform your life. With 5 years of experience in the industry, I have
-                developed a deep
-                understanding of the unique challenges individuals face on their fitness journeys.I have trained
-                multiple clients
-                Like – Posture correction / Injury / Rehabilitation / Specific ( Meniscus tear ) Knee rehabilitation.
-                My approach is centered around personalized training programs tailored to your specific needs, to
-                kickstart your fitness
-                routine. I believe in a holistic approach to fitness that encompasses not only physical exercise but
-                also nutrition
-                guidance and mental well-being.
-
-                My mission is to empower you to become the best version of yourself, both physically and mentally. Your
-                success is my
-                success, and I am genuinely invested in helping you achieve lasting results and develop a lifelong
-                passion for fitness.
-
-                If you’re ready to embark on this transformative fitness journey together, I invite you to reach out to
-                for a
-                consultation. Let’s take that first step towards a healthier, happier you! </p>
-        </div>
+    <div class="container-for-trainer-7">
+      <div class="img-of-trainer-7"></div>
+      <div class="text-container-for-trainer">
+        <h2>Mamta Rana</h2>
+        <h3>Boxing and strength conditioning coach</h3>
+        <p>
+          Hi, I’m Mamta Rana a certified Strength & Conditioning and
+          Rehabilitation personal trainer committed to helping you achieve your
+          fitness goals and transform your life. With 5 years of experience in
+          the industry, I have developed a deep understanding of the unique
+          challenges individuals face on their fitness journeys.I have trained
+          multiple clients Like – Posture correction / Injury / Rehabilitation /
+          Specific ( Meniscus tear ) Knee rehabilitation. My approach is
+          centered around personalized training programs tailored to your
+          specific needs, to kickstart your fitness routine. I believe in a
+          holistic approach to fitness that encompasses not only physical
+          exercise but also nutrition guidance and mental well-being. My mission
+          is to empower you to become the best version of yourself, both
+          physically and mentally. Your success is my success, and I am
+          genuinely invested in helping you achieve lasting results and develop
+          a lifelong passion for fitness. If you’re ready to embark on this
+          transformative fitness journey together, I invite you to reach out to
+          for a consultation. Let’s take that first step towards a healthier,
+          happier you!
+        </p>
+      </div>
     </div>
     <div class="container-for-trainer-8">
-
-        <div class="text-container-for-trainer">
-            <h2>Mumez Sheikh</h2>
-            <h3>Strength and conditioning coach</h3>
-            <p>Mumez shaikh is a certified personal trainer and strength and conditioning coach. He has worked with
-                clients of all
-                levels – from those who are just starting their fitness journey to those who are looking to take their
-                training to the
-                next level.
-
-                Mumez strongly believes that fitness is not a destination but a way of life. He is passionate about
-                helping others reach
-                their fitness goals and achieve their full potential.
-
-                Mumez has worked with clients of all ages and abilities. He has a wealth of experience helping clients
-                achieve their
-                goals, whether it be losing weight, gaining muscle, improving their endurance, or increasing their
-                flexibility.
-
-                No matter what your fitness goals are, Mumez can help you achieve them. Contact him today to start your
-                journey towards
-                a healthier, happier you!</p>
-        </div>
-        <div class="img-of-trainer-8"></div>
+      <div class="text-container-for-trainer">
+        <h2>Mumez Sheikh</h2>
+        <h3>Strength and conditioning coach</h3>
+        <p>
+          Mumez shaikh is a certified personal trainer and strength and
+          conditioning coach. He has worked with clients of all levels – from
+          those who are just starting their fitness journey to those who are
+          looking to take their training to the next level. Mumez strongly
+          believes that fitness is not a destination but a way of life. He is
+          passionate about helping others reach their fitness goals and achieve
+          their full potential. Mumez has worked with clients of all ages and
+          abilities. He has a wealth of experience helping clients achieve their
+          goals, whether it be losing weight, gaining muscle, improving their
+          endurance, or increasing their flexibility. No matter what your
+          fitness goals are, Mumez can help you achieve them. Contact him today
+          to start your journey towards a healthier, happier you!
+        </p>
+      </div>
+      <div class="img-of-trainer-8"></div>
     </div>
     <div class="container-for-trainer-9">
-        <div class="img-of-trainer-9"></div>
-        <div class="text-container-for-trainer">
-            <h2>Vijay</h2>
-            <h3>Strength and Conditioning coach</h3>
-            <p>With a background in science, I have been in the fitness industry for more than half a decade and I have
-                been personal
-                training since 2015 & specialised in nutrition science which is my strong forte.
-
-                I have worked with general population and athletes over these years helping them to lose fat, gain
-                muscle, have a good
-                relationship with food and becoming the best version of themselves in the shortest time possible while
-                developing habits
-                and lifestyle that can help them sustain the results they have worked hard to achieve.</p>
-        </div>
+      <div class="img-of-trainer-9"></div>
+      <div class="text-container-for-trainer">
+        <h2>Vijay</h2>
+        <h3>Strength and Conditioning coach</h3>
+        <p>
+          With a background in science, I have been in the fitness industry for
+          more than half a decade and I have been personal training since 2015 &
+          specialised in nutrition science which is my strong forte. I have
+          worked with general population and athletes over these years helping
+          them to lose fat, gain muscle, have a good relationship with food and
+          becoming the best version of themselves in the shortest time possible
+          while developing habits and lifestyle that can help them sustain the
+          results they have worked hard to achieve.
+        </p>
+      </div>
     </div>
     <div class="bottom-text-container">
-        <div class="bottom-text-for-trainers">
-            <p>We design and deliver superior Quality services through best-in-class Trainers at AbhiFit Lifestyle
-                Coaching
-                Co in
-                Dubai.
-
-                We believe in making a transformative impact on our client’s lifestyles. We build the best workout
-                formats
-                that are
-                innovative, exciting, and engaging. We constantly strive towards continuously improving and exceeding
-                the
-                experience
-                that we provide to our clients. Our coaches are well equipped, certified & trained to give the right
-                fitness
-                training
-                and valuable advice.
-
-                We provide exceptional customer experience through our high-quality and efficient services. This means
-                going
-                out of the
-                way, pushing ourselves beyond our comfort zone, and being patient and open to feedback. We work to know
-                everything we
-                can about our customers and raise the bar on what’s possible to deliver true customer delight every time
-                we
-                interact
-                with them.</p>
-        </div>
+      <div class="bottom-text-for-trainers">
+        <p>
+          We design and deliver superior Quality services through best-in-class
+          Trainers at AbhiFit Lifestyle Coaching Co in Dubai. We believe in
+          making a transformative impact on our client’s lifestyles. We build
+          the best workout formats that are innovative, exciting, and engaging.
+          We constantly strive towards continuously improving and exceeding the
+          experience that we provide to our clients. Our coaches are well
+          equipped, certified & trained to give the right fitness training and
+          valuable advice. We provide exceptional customer experience through
+          our high-quality and efficient services. This means going out of the
+          way, pushing ourselves beyond our comfort zone, and being patient and
+          open to feedback. We work to know everything we can about our
+          customers and raise the bar on what’s possible to deliver true
+          customer delight every time we interact with them.
+        </p>
+      </div>
     </div>
-    <br><br>
-
-
+    <br /><br />
 
     <!--Footer-->
 
     <footer>
-        <div class="content">
-            <div class="top">
-                <div class="logo-details">
-                    <span class="logo_name">AbhiFit</span>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="link-boxes">
-                <ul class="box">
-                    <li class="link_name">AbhiFit</li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Get started</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Services</li>
-                    <li><a href="#">Personal Trainer</a></li>
-                    <li><a href="#">Nutrition</a></li>
-                    <li><a href="#">Online Coaching</a></li>
-                    <li><a href="#">Health Program</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Quick Links</li>
-                    <li><a href="#">Award-Winning PT</a></li>
-                    <li><a href="#">Transformations</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">TDEE Calc</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Account</li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">My account</a></li>
-                    <li><a href="#">Purchase</a></li>
-                </ul>
-
-
-            </div>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <span class="logo_name">AbhiFit</span>
+          </div>
+          <div class="icons">
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-        <div class="bottom-details">
-            <div class="bottom_text">
-                <span class="copyright_text">Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span>
-                <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms & condition</a>
-                </span>
-            </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">AbhiFit</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Get started</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li><a href="#">Personal Trainer</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Online Coaching</a></li>
+            <li><a href="#">Health Program</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Quick Links</li>
+            <li><a href="#">Award-Winning PT</a></li>
+            <li><a href="#">Transformations</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">TDEE Calc</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">Purchase</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

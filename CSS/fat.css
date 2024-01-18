@@ -6,21 +6,21 @@
     --content-width: 480px;
     --background-color: #fff;
     --background-color-secondary: #f8f8f9;
-    --text-color: #060914;
-    --text-color--muted: #71737f;
+    --text-color: rgb(0, 0, 0);
+    --text-color--muted: black  ;
     --line-color: #ededef;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-color: #657bdb;
-        --primary-color--translucent: rgba(85, 106, 195, 0.3);
-        --secondary-color: black;
-        --background-color: #060913;
-        --background-color-secondary: #0f1424;
-        --text-color: #e4e4e7;
+        --primary-color--translucent: rgb(255, 255, 255);
+        --secondary-color: rgb(148, 144, 144);
+        --background-color: white;
+        --background-color-secondary: white;
+        --text-color: rgb(0, 0, 0);
         --text-color--muted: #838690;
-        --line-color: #303341;
+        --line-color: rgb(141, 141, 141);
     }
 }
 
@@ -193,4 +193,15 @@ input[type="range"]::-moz-range-thumb {
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -8px;
+}
+nav {
+    top: 0;
+}
+.main-hero-background h1{
+    font-size: 120px;
+}
+@media (max-width:700px) {
+    .main-hero-background h1{
+        font-size: 50px;
+    }
 }
