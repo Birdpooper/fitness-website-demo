@@ -1,20 +1,24 @@
 <head>
     <link rel="icon" type="image/x-icon" href="/images/main.jpg">
-    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/nav-for-calorie.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../CSS/training.css" />
     <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../javascript/bmi.js" defer></script>
-    <link rel="stylesheet" href="../CSS/bmi.css">
+    <script src="../javascript/fat.js" defer></script>
+    <link rel="stylesheet" href="../CSS/fat.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
     <title>Personal Training | AbhiFit</title>
 </head>
 
 <body>
     <nav>
-        <div class="wrapper">
+        <div class="wrapper1">
             <div class="logo"><a href="#">AbhiFit</a></div>
             <input type="radio" name="slider" id="menu-btn" />
             <input type="radio" name="slider" id="close-btn" />
@@ -83,47 +87,42 @@
         </div>
     </div>
     <br><br>
-    <center>
-        <form class="c-bmi">
-            <label class="c-bmi__label"><strong>Height</strong>
-                <input class="c-bmi__range" type="range" name="h" min="150" max="230" step="0.5" value="180" />
-                <output name="ho"><output>
-            </label>
-            <label class="c-bmi__label"><strong>Weight</strong>
-                <input class="c-bmi__range" type="range" name="w" min="35" max="200" step="0.1" value="75" />
-                <output name="wo">75</output>
-            </label>
-            <div class="c-bmi__result">Your BMI Is: <output name="r"></output></div>
-            <div class="c-bmi__groups" readonly>
-                <input type="radio" id="bmi-g0" name="g" />
-                <label for="bmi-g0">Underweight</label>
-                <div class="c-bmi__group-text">The WHO regards a BMI of less than 18.5 as underweight and may indicate
-                    malnutrition, an eating disorder, or other health problems.</div>
-                <input type="radio" id="bmi-g1" name="g" checked />
-                <label for="bmi-g1">Normal</label>
-                <div class="c-bmi__group-text">A BMI between 18.5 and 25 is considered normal and healthy. </div>
-                <input type="radio" id="bmi-g2" name="g" />
-                <label for="bmi-g2">Pre-obesity</label>
-                <div class="c-bmi__group-text">People who fall into this category may be at risk of developing
-                    obesity.<br />This was earlier classified as "overweight".</div>
-                <input type="radio" id="bmi-g3" name="g" />
-                <label for="bmi-g3">Obese I</label>
-                <div class="c-bmi__group-text">People who have BMI equal or over 30 may have obesity, which is defined
-                    as an
-                    abnormal or excessive accumulation of fat that may harm health.</div>
-                <input type="radio" id="bmi-g4" name="g" />
-                <label for="bmi-g4">Obese II</label>
-                <div class="c-bmi__group-text">People who have BMI equal or over 30 may have obesity, which is defined
-                    as an
-                    abnormal or excessive accumulation of fat that may harm health.</div>
-                <input type="radio" id="bmi-g5" name="g" />
-                <label for="bmi-g5">Obese III</label>
-                <div class="c-bmi__group-text">People who have BMI equal or over 30 may have obesity, which is defined
-                    as an
-                    abnormal or excessive accumulation of fat that may harm health.</div>
+    <div id="bmr-calculator" class="wrapper">
+        <div class="calculator">
+            <div class="choose-gender">
+                <div class="segmented-control"><input id="calc-gender-male" type="radio" name="gender" value="male"
+                        checked=""><label for="calc-gender-male">Male</label></div>
+                <div class="segmented-control">
+                    <input id="calc-gender-female" type="radio" name="gender" value="female"><label
+                        for="calc-gender-female">Female</label>
+                </div>
             </div>
-        </form>
-    </center>
+            <label for="calc-age" id="calc-age_value">Age: 25</label>
+            <input id="calc-age" type="range" value="25" min="13" max="100">
+            <label for="calc-height" id="calc-height_value">Height: 180cm</label>
+            <input id="calc-height" type="range" value="180" min="80" max="250">
+            <label for="calc-weight" id="calc-weight_value">Weight: 80kg</label>
+            <input id="calc-weight" type="range" value="80" min="40" max="200">
+            <label for="calc-walking" id="calc-walking_value">Walking: 2 hours per week</label>
+            <input id="calc-walking" type="range" value="2" min="0" max="50">
+            <label for="calc-cardio" id="calc-cardio_value">Cardio: 1 hour per week</label>
+            <input id="calc-cardio" type="range" value="1" min="0" max="50">
+        </div>
+        <div class="results">
+            <div id="calc-target-gain">
+                To Gain Weight:<br>
+                <span>2700 calories</span>
+            </div>
+            <div id="calc-target-maintain">
+                To Maintain:<br>
+                <span>2400 calories</span>
+            </div>
+            <div id="calc-target-lose">
+                To Lose Weight:<br>
+                <span>1900 calories</span>
+            </div>
+        </div>
+    </div>
     <br><br>
 
 
