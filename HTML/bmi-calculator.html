@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <link rel="stylesheet" href="../CSS/about.css">
     <link rel="icon" type="image/x-icon" href="/images/main.jpg">
     <link rel="stylesheet" href="../CSS/navbar.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../CSS/fit-award-1.css">
+    <link rel="stylesheet" href="../CSS/training.css" />
     <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | AbhiFit</title>
+    <script src="../javascript/bmi.js" defer></script>
+    <link rel="stylesheet" href="../CSS/bmi.css">
+    <title>Personal Training | AbhiFit</title>
 </head>
 
 <body>
@@ -79,73 +77,56 @@
 
     <!--Hero Page-->
     <div class="main-hero-background">
-        <center>
-            <h1>TOP UAE PERSONAL</h1>
-        </center>
+        <h1>BMI</h1>
         <div class="US">
-            <h1>TRAINER 2019</h1>
+            <h1>Calculator</h1>
         </div>
     </div>
-
-    <!--Continers for awards-->
-    <div class="container-for-award-1">
-        <div class="img-container-award-1"></div>
-        <div class="text-container-award-1">
-            <h1>Top personal trainer in UAE by FitAwards in 2019</h1><br>
-            <p>Abhinav Malhotra has received the prestigious award of Top Personal Trainer in UAE (Dubai, Abu Dhabi &
-                All Emirates) by
-                Fit Awards 2019.
-
-
-                Whether you’re looking to get fit for life, lose those last few stubborn kilos, or tone up for a special
-                occasion, Fit
-                Awards 2019 UAE’s Top Personal Trainer and Fit Awards 2018 UAE’s Top 10 Personal Trainer Abhinav
-                Malhotra in Dubai can
-                make you achieve your goals.
-
-
-                The fitness industry in the Middle East comprises of more than 15,000 registered professionals across
-                more than 500
-                venues. As the industry grows and as a way to validate the excellence of professionals in the region,
-                Fit Awards
-                recognises and rewards those that have made this industry a success across all the diverse health &
-                fitness segments.
-
-                Abhinav Malhotra has been an Elite Master Personal Trainer at the amazing Fitness First Dubai and his
-                personal training
-                including nutrition coaching has helped many male and female clients achieve their goals for fitness and
-                physique /
-                figure transformation over the years in Dubai, in India and online around the world.<br><br>
-
-                You can save a lot of time and money and avoid going the wrong paths towards injuries, wrong diet and
-                other issues by
-                consulting with Abhinav about your fitness goals. You can write to him through his social media or
-                contact page.
-
-
-                Pictures speak louder than words and some of Abhinav’s male and female personal training clients in
-                Dubai have been kind
-                enough to share about their transformations on AbhiFit – Get Fit Now’s website.
-
-                Abhinav has given personal training and nutrition coaching and achieved high success for many clients in
-                Dubai, in India
-                and around the world of different age groups, body types, health and fitness conditions and
-                transformation goals.
-
-
-                Before you finalize your personal trainer, do consult with Abhinav and you might find a highly
-                knowledgeable and
-                experience personal trainer and a great friend for life! Get Fit Now! Cheers!
-            </p>
-        </div>
-    </div>
-
+    <br><br>
     <center>
-        <div class="container-for-holding-award">
-            <div class="img-of-holding-award"></div>
-        </div>
+        <form class="c-bmi">
+            <label class="c-bmi__label"><strong>Height</strong>
+                <input class="c-bmi__range" type="range" name="h" min="150" max="230" step="0.5" value="180" />
+                <output name="ho"><output>
+            </label>
+            <label class="c-bmi__label"><strong>Weight</strong>
+                <input class="c-bmi__range" type="range" name="w" min="35" max="200" step="0.1" value="75" />
+                <output name="wo">75</output>
+            </label>
+            <div class="c-bmi__result">Your BMI Is: <output name="r"></output></div>
+            <div class="c-bmi__groups" readonly>
+                <input type="radio" id="bmi-g0" name="g" />
+                <label for="bmi-g0">Underweight</label>
+                <div class="c-bmi__group-text">The WHO regards a BMI of less than 18.5 as underweight and may indicate
+                    malnutrition, an eating disorder, or other health problems.</div>
+                <input type="radio" id="bmi-g1" name="g" checked />
+                <label for="bmi-g1">Normal</label>
+                <div class="c-bmi__group-text">A BMI between 18.5 and 25 is considered normal and healthy. </div>
+                <input type="radio" id="bmi-g2" name="g" />
+                <label for="bmi-g2">Pre-obesity</label>
+                <div class="c-bmi__group-text">People who fall into this category may be at risk of developing
+                    obesity.<br />This was earlier classified as "overweight".</div>
+                <input type="radio" id="bmi-g3" name="g" />
+                <label for="bmi-g3">Obese I</label>
+                <div class="c-bmi__group-text">People who have BMI equal or over 30 may have obesity, which is defined
+                    as an
+                    abnormal or excessive accumulation of fat that may harm health.</div>
+                <input type="radio" id="bmi-g4" name="g" />
+                <label for="bmi-g4">Obese II</label>
+                <div class="c-bmi__group-text">People who have BMI equal or over 30 may have obesity, which is defined
+                    as an
+                    abnormal or excessive accumulation of fat that may harm health.</div>
+                <input type="radio" id="bmi-g5" name="g" />
+                <label for="bmi-g5">Obese III</label>
+                <div class="c-bmi__group-text">People who have BMI equal or over 30 may have obesity, which is defined
+                    as an
+                    abnormal or excessive accumulation of fat that may harm health.</div>
+            </div>
+        </form>
     </center>
     <br><br>
+
+
 
     <!--Footer-->
 
