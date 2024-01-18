@@ -11,10 +11,24 @@
     <link rel="stylesheet" href="../CSS/fit-award-2.css">
     <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | AbhiFit</title>
+    <title>Award | AbhiFit</title>
+    <link rel="stylesheet" href="../css/preloader.css">
 </head>
 
 <body>
+    <!-- Preloader Start -->
+<div class="loader-bg">
+	<div class="loader"></div>
+</div>
+    <!-- Preloader End -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  setTimeout(function(){
+	$('.loader-bg').fadeToggle();
+    }, 1000);
+</script>
     <nav>
         <div class="wrapper">
             <div class="logo"><a href="#">AbhiFit</a></div>
@@ -98,7 +112,10 @@
 
     <!--Continers for awards-->
     <div class="container-for-award-1">
-        <div class="img-container-award-1"></div>
+        <center>
+            <img src="../images/top-10-award.jpg" alt="">
+        </center>
+
         <div class="text-container-award-1">
             <h1>Top 10 personal trainer in UAE </h1><br>
             <p>Abhinav Malhotra received the prestigious award of Top 10 Personal Trainer in UAE (Dubai, Abu Dhabi & All

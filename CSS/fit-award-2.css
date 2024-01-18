@@ -326,8 +326,11 @@ footer .icons a i {
     align-items: center;
     justify-content: center;
     height: 90vh;
-
     gap: 4vw;
+}
+.container-for-award-1 img{
+    height: 70vh;
+    width: 80vh;
 }
 
 .img-container-award-1 {
@@ -339,7 +342,6 @@ footer .icons a i {
 }
 
 .img-of-holding-award {
-
     background: url(../Images/holding-award.jpg);
     background-position: center;
     background-size: cover;
@@ -359,6 +361,9 @@ footer .icons a i {
 }
 
 @media (max-width:900px) {
+    .main-hero-background h1{
+        font-size: 1rem;
+    }
     .main-hero-background h1 {
         font-size: 50px;
         margin-left: 3%;
@@ -369,13 +374,35 @@ footer .icons a i {
     }
 
     .container-for-award-1 {
-
+        gap: 0.1vw;
         flex-direction: column;
-        margin-bottom: 39vw;
+        
     }
 
     .text-container-award-1 {
         width: 90vw;
         font-size: 10px;
     }
+}
+@media (max-width:700px) {
+    .img-container-award-1{
+        margin-top: 10px;
+    }
+    .container-for-award-1{
+        gap: 1vw;
+    }
+    .text-container-award-1{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .container-for-award-1 img{
+        margin-top: 80vw;
+        height: 60vh;
+        width: 70vh;
+    }
+
+    .container-for-holding-award{
+        margin-top: 70vh;
+    }
+ 
 }
