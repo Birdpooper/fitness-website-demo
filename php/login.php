@@ -208,7 +208,7 @@ footer .icons a i {
             </div>
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
-    </div>
+    </div><br><br><br>
 </center>
   <footer>
     <div class="content">
