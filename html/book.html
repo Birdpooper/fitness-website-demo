@@ -142,10 +142,10 @@
       <div class="form-box">
         <!------------------- login form -------------------------->
 
-        <div class="login-container" id="before">
+        <div class="login-container" id="next">
           <div class="top">
             <span
-              >Done Booking? <a href="#" onclick="next()">Next Page</a></span
+              >Done Booking? <a href="#" onclick="before()">Next Page</a></span
             >
             <header>Book a Trial</header>
           </div>
@@ -186,15 +186,31 @@
           </div>
         </div>
 
-        <!------------------- registration form -------------------------->
-        <div class="register-container" id="next">
+        <!------------------- question form -------------------------->
+        <div class="question-container" id="before">
           <div class="top">
             <span
               >Not done booking?
-              <a href="#" onclick="before()">Previous Page</a></span
+              <a href="#" onclick="next()">Previous Page</a></span
             >
             <header>Questionnaire</header>
           </div>
+
+          <iframe
+            width="640px"
+            height="480px"
+            src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jfM3t9UNTlZQ1NXV1Q3WURTNzFKUU5KTUxJMkhJWi4u&embed=true"
+            frameborder="0"
+            marginwidth="0"
+            marginheight="0"
+            style="border: none; max-width: 100%; max-height: 100vh"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            msallowfullscreen
+          >
+          </iframe>
+          <br />
 
           <div class="input-box">
             <input type="submit" class="submit" value="Submit" />

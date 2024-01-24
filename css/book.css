@@ -231,7 +231,7 @@ footer .icons a i {
   align-items: center;
   justify-content: center;
   width: 512px;
-  height: 600px;
+  height: 750px;
   overflow: hidden;
   z-index: 2;
 }
@@ -243,7 +243,7 @@ footer .icons a i {
   flex-direction: column;
   transition: 0.5s ease-in-out;
 }
-.register-container {
+.question-container {
   position: absolute;
   right: -520px;
   width: 500px;
