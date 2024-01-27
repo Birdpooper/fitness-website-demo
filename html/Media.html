@@ -1,236 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/images/main.jpg" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../CSS/media.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media | AbhiFit</title>
+    <link rel="stylesheet" href="../css/preloader.css" />
+  </head>
 
-<head>
-  <link rel="icon" type="image/x-icon" href="/images/main.jpg">
-  <link rel="stylesheet" href="../CSS/navbar.css" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="../CSS/media.css" />
-  <link rel="stylesheet" href="../css/footer.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Media | AbhiFit</title>
-  <link rel="stylesheet" href="../css/preloader.css">
-</head>
-
-<body>
-      <!-- Preloader Start -->
-<div class="loader-bg">
-	<div class="loader"></div>
-</div>
+  <body>
+    <!-- Preloader Start -->
+    <div class="loader-bg">
+      <div class="loader"></div>
+    </div>
     <!-- Preloader End -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader-bg").fadeToggle();
+      }, 1000);
+    </script>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="#">AbhiFit</a></div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/about.html">About</a></li>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-  setTimeout(function(){
-	$('.loader-bg').fadeToggle();
-    }, 1000);
-</script>
-  <nav>
-    <div class="wrapper">
-      <div class="logo"><a href="#">AbhiFit</a></div>
-      <input type="radio" name="slider" id="menu-btn" />
-      <input type="radio" name="slider" id="close-btn" />
-      <ul class="nav-links">
-        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../html/about.html">About</a></li>
-
-        <li><a href="../html/Testimonials.html">Testimonials</a></li>
-        <li>
-          <a href="#" class="desktop-item">Fit Awards</a>
-          <input type="checkbox" id="showDrop" />
-          <label for="showDrop" class="mobile-item">Fit Awards</label>
-          <ul class="drop-menu">
-            <li><a href="../HTML/fit-award-2019.html">Top Personal Trainer UAE 2019</a></li>
-            <li><a href="../HTML/top-trainer-uae.html">Top 10 Personal Trainer UAE 2018</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Services</a>
-          <input type="checkbox" id="showMega" />
-          <label for="showMega" class="mobile-item">Services</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <img src="../images/main.jpg" alt="" />
-              </div>
-              <div class="row">
-                <header>Our Services</header>
-                <ul class="mega-links">
-                  <li><a href="../html/Personal Training.html">Personal Training</a></li>
-                  <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
-                  <li><a href="../html/Media.html">Media</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Calculator</header>
-                <ul class="mega-links">
-                  <li><a href="../HTML/body-fat.html">US Navy Body Fat (%) Calculator</a></li>
-                  <li><a href="../HTML/bmi-calculator.html">BMI Calculator</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Blog</header>
-                <ul class="mega-links">
-                  <li><a href="#">All Posts</a></li>
-                  <li><a href="#">Children</a></li>
-                  <li><a href="#">Men</a></li>
-                  <li><a href="#">Women</a></li>
-                </ul>
+          <li><a href="../html/Testimonials.html">Testimonials</a></li>
+          <li>
+            <a href="#" class="desktop-item">Fit Awards</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Fit Awards</label>
+            <ul class="drop-menu">
+              <li>
+                <a href="../HTML/fit-award-2019.html"
+                  >Top Personal Trainer UAE 2019</a
+                >
+              </li>
+              <li>
+                <a href="../HTML/top-trainer-uae.html"
+                  >Top 10 Personal Trainer UAE 2018</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Services</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Services</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/main.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Our Services</header>
+                  <ul class="mega-links">
+                    <li>
+                      <a href="../html/Personal Training.html"
+                        >Personal Training</a
+                      >
+                    </li>
+                    <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
+                    <li><a href="../html/Media.html">Media</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Calculator</header>
+                  <ul class="mega-links">
+                    <li><a href="../HTML/body-fat.html">BMR Calculator</a></li>
+                    <li>
+                      <a href="../HTML/bmi-calculator.html">BMI Calculator</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Blog</header>
+                  <ul class="mega-links">
+                    <li><a href="#">All Posts</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </li>
+          <style>
+            .profile i {
+              font-size: 40px;
+              line-height: 70px;
+            }
+          </style>
+          <li><a href="../html/contact page.html">Contact</a></li>
+          <div class="profile">
+            <li>
+              <a href="../php/login.php"><i class="bx bxs-user-circle"></i></a>
+            </li>
           </div>
-        </li>
-        <style>
-          .profile i {
-            font-size: 40px;
-            line-height: 70px;
-          }
-        </style>
-        <li><a href="../html/contact page.html">Contact</a></li>
-        <div class="profile">
-          <li><a href="../php/login.php"><i class='bx bxs-user-circle'></i></a></li>
-        </div>
-      </ul>
-      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-    </div>
-  </nav>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
+    </nav>
 
-  <!--Hero Page-->
-  <div class="main-hero-background">
-    <h1>Media</h1>
-    <div class="US">
-      <h1></h1>
-    </div>
-  </div><br><br>
-
-  <!--media Plan-->
-
-  <center>
-    <div class="wow">
-      <h1>MEDIA OF THE BEST PERSONAL TRAINER IN DUBAI</h1>
+    <!--Hero Page-->
+    <div class="main-hero-background">
+      <h1>Media</h1>
       <div class="US">
-        <h1>Abhinav Malhotra has published in magazines & presented on radio in Dubai</h1>
-      </div><br>
+        <h1></h1>
+      </div>
     </div>
-  </center>
+    <br /><br />
 
-  <div class="card-list">
-    <a href="#" class="card-item">
-      <img src="../images/radio.jpg" alt="Card Image">
-      <span class="pink">Radio</span>
-      <h3>
-        Do listen guys….The talk is in English (only the introduction in Malayalam)</h3>
-      <div class="arrow">
-        <i class="fas fa-arrow-right card-icon"></i>
-      </div>
-    </a>
-    <a href="#" class="card-item">
-      <img src="../images/hp.jpg" alt="Card Image">
-      <span class="blue">Radio</span>
-      <h3>27th May 2019: Better Health Feature by Dubai Health Authority in Gulf News.</h3>
-      <div class="arrow">
-        <i class="fas fa-arrow-right card-icon"></i>
-      </div>
-    </a>
-    <a href="#" class="card-item">
-      <img src="../images/n1.jpg" alt="Card Image">
-      <span class="green">Radio</span>
-      <h3>10th May 2019: Column in Friday Magazine by Gulf News – “Ask the Experts” section. Topic – Loose skin after
-        weight loss.</h3>
-      <div class="arrow">
-        <i class="fas fa-arrow-right card-icon"></i>
-      </div>
-    </a>
-    <a href="#" class="card-item">
-      <img src="../images/wh.jpg" alt="Card Image">
-      <span class="pink">Radio</span>
-      <h3>NNutrition talk by Abhinav Malhotra in Jumeirah Golf Estate – Dubai Event – Yoga Sundowner organized by Friday
-        Magazine (Gulf News).</h3>
-      <div class="arrow">
-        <i class="fas fa-arrow-right card-icon"></i>
-      </div>
-    </a>
-    <a href="#" class="card-item">
-      <img src="../images/fri-day.jpg" alt="Card Image">
-      <span class="blue">Radio</span>
-      <h3>24th May 2019 – Article by Abhinav Malhotra in Friday Magazine by Gulf News. “Ask the Experts” section. Topic
-        : Best way to lose body fat.</h3>
-      <div class="arrow">
-        <i class="fas fa-arrow-right card-icon"></i>
-      </div>
-    </a>
-    <a href="#" class="card-item">
-      <img src="../images/the-boi.jpg" alt="Card Image">
-      <span class="green">Radio</span>
-      <h3>Dubai’s Top Fitness Trainer Abhinav Malhotra’s Chat Show with RJ Prince and RJ Vicky on Suno 102.4 FM on
-        Nutrition & Fitness.</h3>
-      <div class="arrow">
-        <i class="fas fa-arrow-right card-icon"></i>
-      </div>
-    </a>
-  </div>
+    <!--media Plan-->
 
-
-
-  <!--Footer-->
-
-  <footer>
-    <div class="content">
-      <div class="top">
-        <div class="logo-details">
-          <span class="logo_name">AbhiFit</span>
+    <center>
+      <div class="wow">
+        <h1>MEDIA OF THE BEST PERSONAL TRAINER IN DUBAI</h1>
+        <div class="US">
+          <h1>
+            Abhinav Malhotra has published in magazines & presented on radio in
+            Dubai
+          </h1>
         </div>
-        <div class="icons">
-          <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+        <br />
+      </div>
+    </center>
+
+    <div class="card-list">
+      <a href="#" class="card-item">
+        <img src="../images/radio.jpg" alt="Card Image" />
+        <span class="pink">Radio</span>
+        <h3>
+          Do listen guys….The talk is in English (only the introduction in
+          Malayalam)
+        </h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="../images/hp.jpg" alt="Card Image" />
+        <span class="blue">Radio</span>
+        <h3>
+          27th May 2019: Better Health Feature by Dubai Health Authority in Gulf
+          News.
+        </h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="../images/n1.jpg" alt="Card Image" />
+        <span class="green">Radio</span>
+        <h3>
+          10th May 2019: Column in Friday Magazine by Gulf News – “Ask the
+          Experts” section. Topic – Loose skin after weight loss.
+        </h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="../images/wh.jpg" alt="Card Image" />
+        <span class="pink">Radio</span>
+        <h3>
+          NNutrition talk by Abhinav Malhotra in Jumeirah Golf Estate – Dubai
+          Event – Yoga Sundowner organized by Friday Magazine (Gulf News).
+        </h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="../images/fri-day.jpg" alt="Card Image" />
+        <span class="blue">Radio</span>
+        <h3>
+          24th May 2019 – Article by Abhinav Malhotra in Friday Magazine by Gulf
+          News. “Ask the Experts” section. Topic : Best way to lose body fat.
+        </h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="../images/the-boi.jpg" alt="Card Image" />
+        <span class="green">Radio</span>
+        <h3>
+          Dubai’s Top Fitness Trainer Abhinav Malhotra’s Chat Show with RJ
+          Prince and RJ Vicky on Suno 102.4 FM on Nutrition & Fitness.
+        </h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <span class="logo_name">AbhiFit</span>
+          </div>
+          <div class="icons">
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">AbhiFit</li>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/contact page.html">Contact us</a></li>
+            <li><a href="../HTML/about.html">About us</a></li>
+            <li><a href="../HTML/contact page.html">Get started</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li>
+              <a href="../HTML/Personal Training.html">Personal Trainer</a>
+            </li>
+            <li><a href="../HTML/nutrition.html">Nutrition Plan</a></li>
+            <li><a href="../HTML/Media.html">Media</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Quick Links</li>
+            <li><a href="../HTML/fit-award-2019.html">Award-Winning PT</a></li>
+            <li>
+              <a href="../HTML/Personal Training.html">Personal Training</a>
+            </li>
+            <li><a href="../HTML/Testimonials.html">Testimonials</a></li>
+            <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="../php/login.php">Profile</a></li>
+            <li><a href="../php/login.php">My account</a></li>
+          </ul>
         </div>
       </div>
-      <div class="link-boxes">
-        <ul class="box">
-          <li class="link_name">AbhiFit</li>
-          <li><a href="../HTML/index.html">Home</a></li>
-          <li><a href="../HTML/contact page.html">Contact us</a></li>
-          <li><a href="../HTML/about.html">About us</a></li>
-          <li><a href="../HTML/contact page.html">Get started</a></li>
-        </ul>
-        <ul class="box">
-          <li class="link_name">Services</li>
-          <li><a href="../HTML/Personal Training.html">Personal Trainer</a></li>
-          <li><a href="../HTML/nutrition.html">Nutrition Plan</a></li>
-          <li><a href="../HTML/Media.html">Media</a></li>
-        </ul>
-        <ul class="box">
-          <li class="link_name">Quick Links</li>
-          <li><a href="../HTML/fit-award-2019.html">Award-Winning PT</a></li>
-          <li><a href="../HTML/Personal Training.html">Personal Training</a></li>
-          <li><a href="../HTML/Testimonials.html">Testimonials</a></li>
-          <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
-        </ul>
-        <ul class="box">
-          <li class="link_name">Account</li>
-          <li><a href="../php/login.php">Profile</a></li>
-          <li><a href="../php/login.php">My account</a></li>
-        </ul>
-
-
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
       </div>
-    </div>
-    <div class="bottom-details">
-      <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span>
-        <span class="policy_terms">
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms & condition</a>
-        </span>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

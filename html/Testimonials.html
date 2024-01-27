@@ -1,306 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/images/main.jpg" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../CSS/Testimonials.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials | AbhiFit</title>
+    <link rel="stylesheet" href="../css/preloader.css" />
+  </head>
 
-<head>
-  <link rel="icon" type="image/x-icon" href="/images/main.jpg">
-  <link rel="stylesheet" href="../CSS/navbar.css" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="../CSS/Testimonials.css" />
-  <link rel="stylesheet" href="../css/footer.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Testimonials | AbhiFit</title>
-  <link rel="stylesheet" href="../css/preloader.css">
-</head>
-
-<body>
-      <!-- Preloader Start -->
-<div class="loader-bg">
-	<div class="loader"></div>
-</div>
+  <body>
+    <!-- Preloader Start -->
+    <div class="loader-bg">
+      <div class="loader"></div>
+    </div>
     <!-- Preloader End -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader-bg").fadeToggle();
+      }, 1000);
+    </script>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="#">AbhiFit</a></div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/about.html">About</a></li>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-  setTimeout(function(){
-	$('.loader-bg').fadeToggle();
-    }, 1000);
-</script>
-  <nav>
-    <div class="wrapper">
-      <div class="logo"><a href="#">AbhiFit</a></div>
-      <input type="radio" name="slider" id="menu-btn" />
-      <input type="radio" name="slider" id="close-btn" />
-      <ul class="nav-links">
-        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../html/about.html">About</a></li>
-
-        <li><a href="../html/Testimonials.html">Testimonials</a></li>
-        <li>
-          <a href="#" class="desktop-item">Fit Awards</a>
-          <input type="checkbox" id="showDrop" />
-          <label for="showDrop" class="mobile-item">Fit Awards</label>
-          <ul class="drop-menu">
-            <li><a href="../HTML/fit-award-2019.html">Top Personal Trainer UAE 2019</a></li>
-            <li><a href="../HTML/top-trainer-uae.html">Top 10 Personal Trainer UAE 2018</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Services</a>
-          <input type="checkbox" id="showMega" />
-          <label for="showMega" class="mobile-item">Services</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <img src="../images/main.jpg" alt="" />
-              </div>
-              <div class="row">
-                <header>Our Services</header>
-                <ul class="mega-links">
-                  <li><a href="../html/Personal Training.html">Personal Training</a></li>
-                  <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
-                  <li><a href="../html/Media.html">Media</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Calculator</header>
-                <ul class="mega-links">
-                  <li><a href="../HTML/body-fat.html">US Navy Body Fat (%) Calculator</a></li>
-                  <li><a href="../HTML/bmi-calculator.html">BMI Calculator</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Blog</header>
-                <ul class="mega-links">
-                  <li><a href="#">All Posts</a></li>
-                  <li><a href="#">Children</a></li>
-                  <li><a href="#">Men</a></li>
-                  <li><a href="#">Women</a></li>
-                </ul>
+          <li><a href="../html/Testimonials.html">Testimonials</a></li>
+          <li>
+            <a href="#" class="desktop-item">Fit Awards</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Fit Awards</label>
+            <ul class="drop-menu">
+              <li>
+                <a href="../HTML/fit-award-2019.html"
+                  >Top Personal Trainer UAE 2019</a
+                >
+              </li>
+              <li>
+                <a href="../HTML/top-trainer-uae.html"
+                  >Top 10 Personal Trainer UAE 2018</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Services</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Services</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/main.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Our Services</header>
+                  <ul class="mega-links">
+                    <li>
+                      <a href="../html/Personal Training.html"
+                        >Personal Training</a
+                      >
+                    </li>
+                    <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
+                    <li><a href="../html/Media.html">Media</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Calculator</header>
+                  <ul class="mega-links">
+                    <li><a href="../HTML/body-fat.html">BMR Calculator</a></li>
+                    <li>
+                      <a href="../HTML/bmi-calculator.html">BMI Calculator</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Blog</header>
+                  <ul class="mega-links">
+                    <li><a href="#">All Posts</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </li>
+          <style>
+            .profile i {
+              font-size: 40px;
+              line-height: 70px;
+            }
+          </style>
+          <li><a href="../html/contact page.html">Contact</a></li>
+          <div class="profile">
+            <li>
+              <a href="../php/login.php"><i class="bx bxs-user-circle"></i></a>
+            </li>
           </div>
-        </li>
-        <style>
-          .profile i {
-            font-size: 40px;
-            line-height: 70px;
-          }
-        </style>
-        <li><a href="../html/contact page.html">Contact</a></li>
-        <div class="profile">
-          <li><a href="../php/login.php"><i class='bx bxs-user-circle'></i></a></li>
-        </div>
-      </ul>
-      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-    </div>
-  </nav>
-
-  <!--Hero Page-->
-  <div class="main-hero-background">
-    <h1>Testimonials</h1>
-    <div class="US">
-      <h1></h1>
-    </div>
-  </div><br><br>
-
-  <!--Testimonials-->
-  <section class="contact">
-    <div class="max-width">
-      <div class="center">
-        <h2 class="title">Testimonials</h2>
-      </div>
-    </div>
-  </section>
-  <center>
-    <div class="reviews">
-      <span class="heading">User Rating</span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <p>5.0 average based on 63 reviews.</p>
-      <hr style="border:3px solid #f1f1f1">
-
-      <div class="row">
-        <div class="side">
-          <div>5 star</div>
-        </div>
-        <div class="middle">
-          <div class="bar-container">
-            <div class="bar-5"></div>
-          </div>
-        </div>
-        <div class="side right">
-          <div>55</div>
-        </div>
-        <div class="side">
-          <div>4 star</div>
-        </div>
-        <div class="middle">
-          <div class="bar-container">
-            <div class="bar-4"></div>
-          </div>
-        </div>
-        <div class="side right">
-          <div>5</div>
-        </div>
-        <div class="side">
-          <div>3 star</div>
-        </div>
-        <div class="middle">
-          <div class="bar-container">
-            <div class="bar-3"></div>
-          </div>
-        </div>
-        <div class="side right">
-          <div>1</div>
-        </div>
-        <div class="side">
-          <div>2 star</div>
-        </div>
-        <div class="middle">
-          <div class="bar-container">
-            <div class="bar-2"></div>
-          </div>
-        </div>
-        <div class="side right">
-          <div>1</div>
-        </div>
-        <div class="side">
-          <div>1 star</div>
-        </div>
-        <div class="middle">
-          <div class="bar-container">
-            <div class="bar-1"></div>
-          </div>
-        </div>
-        <div class="side right">
-          <div>1</div>
-        </div>
-      </div>
-    </div>
-  </center>
-  <center style="margin-top: 10vh;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qxgVgv7Ce5A?si=SbJNfpl3ngghMayf"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DcPLOxr4ojU?si=xeaoMkmWdAREol6V"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </center>
-  <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/evWaAuubQEc?si=rkgXXM-FACEzFEPk"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/JBNbznd3jWc?si=hkIYF8pMn8EilfFX"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </center>
-  <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/I5vUCNT3tgI?si=e0eE58yfIg7tXvzS"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/k644ys_55wA?si=pPaweTlfIo-MVuhF"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </center>
-  <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vCSjn9oRu_0?si=6rkYOkzNQZ7MZpkW"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0kYBUTkIqrk?si=QjovpPA9VB9sh7SY"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </center>
-  <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_mwSmE06iQ?si=xyofpeAO84OGsROt"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pEjVTyM6OQ8?si=39duDLIuy2CgrEX5"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </center><br><br>
-
-  <!--Reviews-->
-
-
-
-
-  <!--Footer-->
-
-  <footer>
-    <div class="content">
-      <div class="top">
-        <div class="logo-details">
-          <span class="logo_name">AbhiFit</span>
-        </div>
-        <div class="icons">
-          <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="link-boxes">
-        <ul class="box">
-          <li class="link_name">AbhiFit</li>
-          <li><a href="../HTML/index.html">Home</a></li>
-          <li><a href="../HTML/contact page.html">Contact us</a></li>
-          <li><a href="../HTML/about.html">About us</a></li>
-          <li><a href="../HTML/contact page.html">Get started</a></li>
         </ul>
-        <ul class="box">
-          <li class="link_name">Services</li>
-          <li><a href="../HTML/Personal Training.html">Personal Trainer</a></li>
-          <li><a href="../HTML/nutrition.html">Nutrition Plan</a></li>
-          <li><a href="../HTML/Media.html">Media</a></li>
-        </ul>
-        <ul class="box">
-          <li class="link_name">Quick Links</li>
-          <li><a href="../HTML/fit-award-2019.html">Award-Winning PT</a></li>
-          <li><a href="../HTML/Personal Training.html">Personal Training</a></li>
-          <li><a href="../HTML/Testimonials.html">Testimonials</a></li>
-          <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
-        </ul>
-        <ul class="box">
-          <li class="link_name">Account</li>
-          <li><a href="../php/login.php">Profile</a></li>
-          <li><a href="../php/login.php">My account</a></li>
-        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
+    </nav>
 
-
+    <!--Hero Page-->
+    <div class="main-hero-background">
+      <h1>Testimonials</h1>
+      <div class="US">
+        <h1></h1>
       </div>
     </div>
-    <div class="bottom-details">
-      <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span>
-        <span class="policy_terms">
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms & condition</a>
-        </span>
-      </div>
-    </div>
-  </footer>
-</body>
+    <br /><br />
 
+    <!--Testimonials-->
+    <section class="contact">
+      <div class="max-width">
+        <div class="center">
+          <h2 class="title">Testimonials</h2>
+        </div>
+      </div>
+    </section>
+    <center>
+      <div class="reviews">
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p>5.0 average based on 63 reviews.</p>
+        <hr style="border: 3px solid #f1f1f1" />
+
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>55</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>5</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>1</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>1</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>1</div>
+          </div>
+        </div>
+      </div>
+    </center>
+    <center style="margin-top: 10vh">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/qxgVgv7Ce5A?si=SbJNfpl3ngghMayf"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/DcPLOxr4ojU?si=xeaoMkmWdAREol6V"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </center>
+    <center>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/evWaAuubQEc?si=rkgXXM-FACEzFEPk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JBNbznd3jWc?si=hkIYF8pMn8EilfFX"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </center>
+    <center>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/I5vUCNT3tgI?si=e0eE58yfIg7tXvzS"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/k644ys_55wA?si=pPaweTlfIo-MVuhF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </center>
+    <center>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/vCSjn9oRu_0?si=6rkYOkzNQZ7MZpkW"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/0kYBUTkIqrk?si=QjovpPA9VB9sh7SY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </center>
+    <center>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Q_mwSmE06iQ?si=xyofpeAO84OGsROt"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/pEjVTyM6OQ8?si=39duDLIuy2CgrEX5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </center>
+    <br /><br />
+
+    <!--Reviews-->
+
+    <!--Footer-->
+
+    <footer>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <span class="logo_name">AbhiFit</span>
+          </div>
+          <div class="icons">
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">AbhiFit</li>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/contact page.html">Contact us</a></li>
+            <li><a href="../HTML/about.html">About us</a></li>
+            <li><a href="../HTML/contact page.html">Get started</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li>
+              <a href="../HTML/Personal Training.html">Personal Trainer</a>
+            </li>
+            <li><a href="../HTML/nutrition.html">Nutrition Plan</a></li>
+            <li><a href="../HTML/Media.html">Media</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Quick Links</li>
+            <li><a href="../HTML/fit-award-2019.html">Award-Winning PT</a></li>
+            <li>
+              <a href="../HTML/Personal Training.html">Personal Training</a>
+            </li>
+            <li><a href="../HTML/Testimonials.html">Testimonials</a></li>
+            <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="../php/login.php">Profile</a></li>
+            <li><a href="../php/login.php">My account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

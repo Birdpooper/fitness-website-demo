@@ -1,210 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="../CSS/about.css">
-    <link rel="icon" type="image/x-icon" href="/images/main.jpg">
+  <head>
+    <link rel="stylesheet" href="../CSS/about.css" />
+    <link rel="icon" type="image/x-icon" href="/images/main.jpg" />
     <link rel="stylesheet" href="../CSS/navbar.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../CSS/fit-award-2.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../CSS/fit-award-2.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Award | AbhiFit</title>
-    <link rel="stylesheet" href="../css/preloader.css">
-</head>
+    <link rel="stylesheet" href="../css/preloader.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Preloader Start -->
-<div class="loader-bg">
-	<div class="loader"></div>
-</div>
+    <div class="loader-bg">
+      <div class="loader"></div>
+    </div>
     <!-- Preloader End -->
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-  setTimeout(function(){
-	$('.loader-bg').fadeToggle();
-    }, 1000);
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader-bg").fadeToggle();
+      }, 1000);
+    </script>
     <nav>
-        <div class="wrapper">
-            <div class="logo"><a href="#">AbhiFit</a></div>
-            <input type="radio" name="slider" id="menu-btn" />
-            <input type="radio" name="slider" id="close-btn" />
-            <ul class="nav-links">
-                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li><a href="../html/index.html">Home</a></li>
-                <li><a href="../html/about.html">About</a></li>
+      <div class="wrapper">
+        <div class="logo"><a href="#">AbhiFit</a></div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/about.html">About</a></li>
 
-                <li><a href="../html/Testimonials.html">Testimonials</a></li>
-                <li>
-                    <a href="#" class="desktop-item">Fit Awards</a>
-                    <input type="checkbox" id="showDrop" />
-                    <label for="showDrop" class="mobile-item">Fit Awards</label>
-                    <ul class="drop-menu">
-                        <li><a href="../HTML/fit-award-2019.html">Top Personal Trainer UAE 2019</a></li>
-                        <li><a href="#">Top 10 Personal Trainer UAE 2018</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="desktop-item">Services</a>
-                    <input type="checkbox" id="showMega" />
-                    <label for="showMega" class="mobile-item">Services</label>
-                    <div class="mega-box">
-                        <div class="content">
-                            <div class="row">
-                                <img src="../images/main.jpg" alt="" />
-                            </div>
-                            <div class="row">
-                                <header>Our Services</header>
-                                <ul class="mega-links">
-                                    <li><a href="../html/Personal Training.html">Personal Training</a></li>
-                                    <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
-                                    <li><a href="../html/Media.html">Media</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Calculator</header>
-                                <ul class="mega-links">
-                                    <li><a href="../HTML/body-fat.html">US Navy Body Fat (%) Calculator</a></li>
-                                    <li><a href="../HTML/bmi-calculator.html">BMI Calculator</a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header>Blog</header>
-                                <ul class="mega-links">
-                                    <li><a href="#">All Posts</a></li>
-                                    <li><a href="#">Children</a></li>
-                                    <li><a href="#">Men</a></li>
-                                    <li><a href="#">Women</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <style>
-                    .profile i {
-                        font-size: 40px;
-                        line-height: 70px;
-                    }
-                </style>
-                <li><a href="../html/contact page.html">Contact</a></li>
-                <div class="profile">
-                    <li><a href="../php/login.php"><i class='bx bxs-user-circle'></i></a></li>
-                </div>
+          <li><a href="../html/Testimonials.html">Testimonials</a></li>
+          <li>
+            <a href="#" class="desktop-item">Fit Awards</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Fit Awards</label>
+            <ul class="drop-menu">
+              <li>
+                <a href="../HTML/fit-award-2019.html"
+                  >Top Personal Trainer UAE 2019</a
+                >
+              </li>
+              <li>
+                <a href="../HTML/top-trainer-uae.html"
+                  >Top 10 Personal Trainer UAE 2018</a
+                >
+              </li>
             </ul>
-            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-        </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Services</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Services</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/main.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Our Services</header>
+                  <ul class="mega-links">
+                    <li>
+                      <a href="../html/Personal Training.html"
+                        >Personal Training</a
+                      >
+                    </li>
+                    <li><a href="../html/nutrition.html">Nutrition Plan</a></li>
+                    <li><a href="../html/Media.html">Media</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Calculator</header>
+                  <ul class="mega-links">
+                    <li><a href="../HTML/body-fat.html">BMR Calculator</a></li>
+                    <li>
+                      <a href="../HTML/bmi-calculator.html">BMI Calculator</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Blog</header>
+                  <ul class="mega-links">
+                    <li><a href="#">All Posts</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <style>
+            .profile i {
+              font-size: 40px;
+              line-height: 70px;
+            }
+          </style>
+          <li><a href="../html/contact page.html">Contact</a></li>
+          <div class="profile">
+            <li>
+              <a href="../php/login.php"><i class="bx bxs-user-circle"></i></a>
+            </li>
+          </div>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
     </nav>
 
     <!--Hero Page-->
     <div class="main-hero-background">
-        <center>
-            <h1>TOP 10</h1>
-        </center>
-        <div class="US">
-            <h1>TRAINER 2018</h1>
-        </div>
+      <center>
+        <h1>TOP 10</h1>
+      </center>
+      <div class="US">
+        <h1>TRAINER 2018</h1>
+      </div>
     </div>
 
     <!--Continers for awards-->
     <div class="container-for-award-1">
-        <center>
-            <img src="../images/top-10-award.jpg" alt="">
-        </center>
+      <center>
+        <img src="../images/top-10-award.jpg" alt="" />
+      </center>
 
-        <div class="text-container-award-1">
-            <h1>Top 10 personal trainer in UAE </h1><br>
-            <p>Abhinav Malhotra received the prestigious award of Top 10 Personal Trainer in UAE (Dubai, Abu Dhabi & All
-                Emirates) by
-                Fit Awards 2018.
-
-                Whether you’re looking to get fit for life, lose those last few stubborn kilos, or tone up for a special
-                occasion, Fit
-                Awards 2018 UAE’s Top 10 Personal Trainer Abhinav Malhotra in Dubai can make you achieve your goals.
-
-                The fitness industry in the Middle East comprises of more than 15,000 registered professionals across
-                more than 500
-                venues. As the industry grows and as a way to validate the excellence of professionals in the region,
-                Fit Awards
-                recognises and rewards those that have made this industry a success across all the diverse health &
-                fitness segments.
-
-                Abhinav Malhotra has been an Elite Master Personal Trainer at the amazing Fitness First Dubai and his
-                personal training
-                including nutrition coaching has helped many male and female clients achieve their goals for fitness and
-                physique /
-                figure transformation over the years in Dubai, in India and online around the world.
-
-            </p>
-        </div>
+      <div class="text-container-award-1">
+        <h1>Top 10 personal trainer in UAE</h1>
+        <br />
+        <p>
+          Abhinav Malhotra received the prestigious award of Top 10 Personal
+          Trainer in UAE (Dubai, Abu Dhabi & All Emirates) by Fit Awards 2018.
+          Whether you’re looking to get fit for life, lose those last few
+          stubborn kilos, or tone up for a special occasion, Fit Awards 2018
+          UAE’s Top 10 Personal Trainer Abhinav Malhotra in Dubai can make you
+          achieve your goals. The fitness industry in the Middle East comprises
+          of more than 15,000 registered professionals across more than 500
+          venues. As the industry grows and as a way to validate the excellence
+          of professionals in the region, Fit Awards recognises and rewards
+          those that have made this industry a success across all the diverse
+          health & fitness segments. Abhinav Malhotra has been an Elite Master
+          Personal Trainer at the amazing Fitness First Dubai and his personal
+          training including nutrition coaching has helped many male and female
+          clients achieve their goals for fitness and physique / figure
+          transformation over the years in Dubai, in India and online around the
+          world.
+        </p>
+      </div>
     </div>
 
     <center>
-        <div class="container-for-holding-award">
-            <div class="img-of-holding-award"></div>
-        </div>
+      <div class="container-for-holding-award">
+        <div class="img-of-holding-award"></div>
+      </div>
     </center>
-    <br><br>
+    <br /><br />
 
     <!--Footer-->
 
     <footer>
-        <div class="content">
-            <div class="top">
-                <div class="logo-details">
-                    <span class="logo_name">AbhiFit</span>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="link-boxes">
-                <ul class="box">
-                    <li class="link_name">AbhiFit</li>
-                    <li><a href="../HTML/index.html">Home</a></li>
-                    <li><a href="../HTML/contact page.html">Contact us</a></li>
-                    <li><a href="../HTML/about.html">About us</a></li>
-                    <li><a href="../HTML/contact page.html">Get started</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Services</li>
-                    <li><a href="../HTML/Personal Training.html">Personal Trainer</a></li>
-                    <li><a href="../HTML/nutrition.html">Nutrition Plan</a></li>
-                    <li><a href="../HTML/Media.html">Media</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Quick Links</li>
-                    <li><a href="../HTML/fit-award-2019.html">Award-Winning PT</a></li>
-                    <li><a href="../HTML/Personal Training.html">Personal Training</a></li>
-                    <li><a href="../HTML/Testimonials.html">Testimonials</a></li>
-                    <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Account</li>
-                    <li><a href="../php/login.php">Profile</a></li>
-                    <li><a href="../php/login.php">My account</a></li>
-                </ul>
-
-
-            </div>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <span class="logo_name">AbhiFit</span>
+          </div>
+          <div class="icons">
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-        <div class="bottom-details">
-            <div class="bottom_text">
-                <span class="copyright_text">Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span>
-                <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms & condition</a>
-                </span>
-            </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">AbhiFit</li>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/contact page.html">Contact us</a></li>
+            <li><a href="../HTML/about.html">About us</a></li>
+            <li><a href="../HTML/contact page.html">Get started</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Services</li>
+            <li>
+              <a href="../HTML/Personal Training.html">Personal Trainer</a>
+            </li>
+            <li><a href="../HTML/nutrition.html">Nutrition Plan</a></li>
+            <li><a href="../HTML/Media.html">Media</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Quick Links</li>
+            <li><a href="../HTML/fit-award-2019.html">Award-Winning PT</a></li>
+            <li>
+              <a href="../HTML/Personal Training.html">Personal Training</a>
+            </li>
+            <li><a href="../HTML/Testimonials.html">Testimonials</a></li>
+            <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
+          </ul>
+          <ul class="box">
+            <li class="link_name">Account</li>
+            <li><a href="../php/login.php">Profile</a></li>
+            <li><a href="../php/login.php">My account</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"
+            >Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span
+          >
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </span>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
