@@ -258,13 +258,6 @@
 /*#region MODULES */
 /*#endregion */
 /*___________________________________ LAYOUT ___________________________________ */
-* {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  padding-left: 40px;
-}
 
 #slider1 {
   margin: 20px;
@@ -300,6 +293,17 @@ video {
   -o-background-size: cover;
   background-size: cover;
 }
-p {
+video p {
   margin-left: 3em;
+}
+
+@media (max-width: 700px) {
+  video {
+    position: relative;
+    width: 450px;
+    margin-right: 350px;
+  }
+  .arrows {
+    display: none;
+  }
 }

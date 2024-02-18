@@ -833,15 +833,66 @@ button:hover {
   animation: pulse512 1.5s infinite;
 }
 
+.gallery {
+  background-color: whitesmoke;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.image-gallery-1,
+.image-gallery-2,
+.image-gallery-3,
+.image-gallery-4 {
+  transition: 1.2s;
+  height: 80vh;
+  width: 23vw;
+  background-color: red;
+}
+.image-gallery-1:hover,
+.image-gallery-2:hover,
+.image-gallery-3:hover,
+.image-gallery-4:hover {
+  width: 100%;
+}
+
+.random-container-for-asdufjfv-text {
+  width: 30vw;
+}
+.image-gallery-1 {
+  background: url(../images/big.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-gallery-2 {
+  background: url(../images/award1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-gallery-3 {
+  background: url(../images/award2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-gallery-4 {
+  background: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @keyframes pulse512 {
   0% {
     box-shadow: 0 0 0 0 #05bada66;
   }
-
   70% {
     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
   }
-
   100% {
     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
   }
