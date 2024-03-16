@@ -862,25 +862,25 @@ button:hover {
   width: 30vw;
 }
 .image-gallery-1 {
-  background: url(../images/big.jpg);
+  background: url(../images/pic1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .image-gallery-2 {
-  background: url(../images/award1.jpg);
+  background: url(../images/pic2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .image-gallery-3 {
-  background: url(../images/award2.jpg);
+  background: url(../images/pic3.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .image-gallery-4 {
-  background: url(../images/background.jpg);
+  background: url(../images/pic4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

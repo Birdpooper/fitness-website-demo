@@ -28,7 +28,7 @@ nav .wrapper {
   position: relative;
   max-width: 1300px;
   padding: 0px 30px;
-  height: 70px;
+  height: 85px;
   line-height: 120px;
   margin: auto;
   display: flex;
@@ -41,6 +41,10 @@ nav .wrapper {
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
+}
+.wrapper .logo img {
+  width: 95px;
+  margin-top: 50px;
 }
 
 .wrapper .nav-links {
