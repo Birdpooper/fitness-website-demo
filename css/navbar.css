@@ -46,6 +46,10 @@ nav .wrapper {
   width: 95px;
   margin-top: 50px;
 }
+.wrapper .logo1 img {
+  width: 95px;
+  margin-top: 1px;
+}
 
 .wrapper .nav-links {
   display: inline-flex;

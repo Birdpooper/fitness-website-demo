@@ -126,22 +126,25 @@ footer .icons a i {
 </div>
 </center><br><br><br><br><br><br><br><br>
 
-  <footer>
+<footer>
     <div class="content">
       <div class="top">
         <div class="logo-details">
-          <span class="logo_name">AbhiFit</span>
-        </div>
-        <div class="icons">
-          <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          <div class="logo"><a href=""><img src="../images/ptlogo.png" alt="PT Transformer" width="100px"></a></div>
+          <span class="logo_name">PT Transformer</span>
+      </div>
+        <div class="fix">
+          <div class="icons">
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
       </div>
       <div class="link-boxes">
         <ul class="box">
-          <li class="link_name">AbhiFit</li>
+          <li class="link_name">PT Transformer</li>
           <li><a href="../HTML/index.html">Home</a></li>
           <li><a href="../HTML/contact page.html">Contact us</a></li>
           <li><a href="../HTML/about.html">About us</a></li>
@@ -155,10 +158,9 @@ footer .icons a i {
         </ul>
         <ul class="box">
           <li class="link_name">Quick Links</li>
-          <li><a href="../HTML/fit-award-2019.html">Award-Winning PT</a></li>
-          <li><a href="../HTML/Personal Training.html">Personal Training</a></li>
           <li><a href="../HTML/Testimonials.html">Testimonials</a></li>
           <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
+          <li><a href="../HTML/body-fat.html">BMR Calc</a></li>
         </ul>
         <ul class="box">
           <li class="link_name">Account</li>
@@ -171,7 +173,7 @@ footer .icons a i {
     </div>
     <div class="bottom-details">
       <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2024 <a href="#">AbhiFit</a>All rights reserved</span>
+        <span class="copyright_text">Copyright © 2024 <a href="#">PT Transformer</a>All rights reserved</span>
         <span class="policy_terms">
           <a href="#">Privacy policy</a>
           <a href="#">Terms & condition</a>
