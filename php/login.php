@@ -117,9 +117,9 @@ footer .icons a i {
     </style>
 </head>
 <body>
-     <nav>
+<nav>
         <div class="wrapper">
-            <div class="logo"><a href="#">AbhiFit</a></div>
+            <div class="logo"><a href=""><img src="../images/ptlogo.png" alt="PT Transformer"></a></div>
             <input type="radio" name="slider" id="menu-btn" />
             <input type="radio" name="slider" id="close-btn" />
             <ul class="nav-links">
@@ -157,7 +157,7 @@ footer .icons a i {
                             <div class="row">
                                 <header>Calculator</header>
                                 <ul class="mega-links">
-                                    <li><a href="../HTML/body-fat.html">US Navy Body Fat (%) Calculator</a></li>
+                                    <li><a href="../HTML/body-fat.html">BMR Calculator</a></li>
                                     <li><a href="../HTML/bmi-calculator.html">BMI Calculator</a></li>
                                 </ul>
                             </div>
@@ -173,6 +173,12 @@ footer .icons a i {
                         </div>
                     </div>
                 </li>
+                <style>
+                    .profile i {
+                        font-size: 40px;
+                        line-height: 70px;
+                    }
+                </style>
                 <li><a href="../html/contact page.html">Contact</a></li>
                 <div class="profile">
                     <li><a href="../php/login.php"><i class='bx bxs-user-circle'></i></a></li>

@@ -7,10 +7,11 @@
   color: white;
   height: 100vh;
   text-shadow: 3px 3px 10px black;
-  background: url(../Images/background.jpg);
+  background: url(../Images/pic4.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  gap: 1vw;
 }
 
 .main-program-background {
@@ -880,7 +881,7 @@ button:hover {
   background-repeat: no-repeat;
 }
 .image-gallery-4 {
-  background: url(../images/pic4.jpg);
+  background: url(../images/pic5.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
