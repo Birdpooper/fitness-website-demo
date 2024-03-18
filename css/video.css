@@ -301,7 +301,7 @@ video p {
   video {
     position: relative;
     width: 450px;
-    margin-right: 350px;
+    margin-right: 30%;
   }
   .arrows {
     display: none;

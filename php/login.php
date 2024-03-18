@@ -223,14 +223,12 @@ footer .icons a i {
           <div class="logo"><a href=""><img src="../images/ptlogo.png" alt="PT Transformer" width="100px"></a></div>
           <span class="logo_name">PT Transformer</span>
       </div>
-        <div class="fix">
           <div class="icons">
             <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
             <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
           </div>
-        </div>
       </div>
       <div class="link-boxes">
         <ul class="box">

@@ -1,109 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
 }
-footer{
+footer {
   position: relative;
   background: rgb(238, 238, 238);
   width: 100%;
   bottom: 0;
   left: 0;
 }
-footer .content{
+footer .content {
   max-width: 1250px;
   margin: auto;
   padding: 30px 40px 40px 40px;
 }
-footer .content .top{
+footer .content .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.content .top .logo-details{
+.content .top .logo-details {
   color: black;
   font-size: 30px;
   font-weight: bold;
 }
-.content .top .icons{
+.content .top .icons {
   display: flex;
 }
 
-.icons a{
-    background: #ecf0f3;
-    position: relative;
-    width: 70px;
-    height: 70px;
-    margin: 0 10px;
-    display: inline-flex;
-    text-decoration: none;
-    border-radius: 50%;
-    transition: all 0.3s;
-    box-shadow: -3px -3px 7px #ffffff,
-                3px 3px 5px #ceced1;
-              
-  }
+.icons a {
+  background: #ecf0f3;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
 
-  .icons a:hover:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff,
-                inset 3px 3px 5px #ceced1;
-  }
-  .icons a i{
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    font-size: 45px;
-    line-height: 20px;
-  }
-  .icons a:hover i{
-    transform: scale(0.9);
-  }
-  .icons a.fb i{
-    color: #4267B2;
-  }
-  .icons a.twitter i{
-    color: #1DA1F2;
-  }
-  .icons a.insta i{
-    color: #E1306C;
-  }
-  .icons a.git i{
-    color: #333;
-  }
-  .icons a.yt i{
-    color: #ff0000;
-  }
-footer .content .link-boxes{
+.icons a:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.icons a i {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 45px;
+  line-height: 20px;
+}
+.icons a:hover i {
+  transform: scale(0.9);
+}
+.icons a.fb i {
+  color: #4267b2;
+}
+.icons a.twitter i {
+  color: #1da1f2;
+}
+.icons a.insta i {
+  color: #e1306c;
+}
+.icons a.git i {
+  color: #333;
+}
+.icons a.yt i {
+  color: #ff0000;
+}
+footer .content .link-boxes {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-footer .content .link-boxes .box{
+footer .content .link-boxes .box {
   width: calc(100% / 5 - 10px);
 }
-.content .link-boxes .box .link_name{
+.content .link-boxes .box .link_name {
   color: black;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
 }
-.link-boxes .box .link_name::before{
-  content: '';
+.link-boxes .box .link_name::before {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -111,31 +108,31 @@ footer .content .link-boxes .box{
   width: 35px;
   background: #fff;
 }
-.content .link-boxes .box li{
+.content .link-boxes .box li {
   margin: 6px 0;
   list-style: none;
 }
-.content .link-boxes .box li a{
+.content .link-boxes .box li a {
   color: black;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
   opacity: 0.8;
-  transition: all 0.4s ease
+  transition: all 0.4s ease;
 }
-.content .link-boxes .box li a:hover{
+.content .link-boxes .box li a:hover {
   opacity: 1;
   text-decoration: underline;
 }
-.content .link-boxes .input-box{
+.content .link-boxes .input-box {
   margin-right: 55px;
 }
 
-footer .bottom-details{
+footer .bottom-details {
   width: 100%;
   background: rgb(228, 228, 228);
 }
-footer .bottom-details .bottom_text{
+footer .bottom-details .bottom_text {
   max-width: 1250px;
   margin: auto;
   padding: 20px 40px;
@@ -143,49 +140,52 @@ footer .bottom-details .bottom_text{
   justify-content: space-between;
 }
 .bottom-details .bottom_text span,
-.bottom-details .bottom_text a{
+.bottom-details .bottom_text a {
   font-size: 14px;
   font-weight: 300;
   color: black;
   opacity: 0.8;
   text-decoration: none;
 }
-.bottom-details .bottom_text a:hover{
+.bottom-details .bottom_text a:hover {
   opacity: 1;
   text-decoration: underline;
 }
-.bottom-details .bottom_text a{
+.bottom-details .bottom_text a {
   margin-right: 10px;
 }
 
-@media (max-width: 700px){
-  footer{
+@media (max-width: 700px) {
+  footer {
     position: relative;
   }
-  .content .top .logo-details{
+  .content .top .logo-details {
     font-size: 26px;
   }
-  .content .top .icons a{
+  .content .top .icons a {
     height: 50px;
     width: 50px;
   }
-  .fix .icons a i{
+  .fix .icons a i {
     margin-top: 20px;
+  }
+  .fix1 .icons a i {
+    margin-top: -10px;
   }
 
   .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a{
+  .bottom-details .bottom_text a {
     font-size: 12px;
   }
 }
-@media (max-width: 520px){
-  footer::before{
+@media (max-width: 520px) {
+  footer::before {
     top: 145px;
   }
-  footer .content .top{
+  footer .content .top {
     flex-direction: column;
   }
-  .content .top .icons{
+  .content .top .icons {
     margin-top: 10px;
   }
 }

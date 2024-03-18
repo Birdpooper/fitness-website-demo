@@ -1,6 +1,6 @@
 .main-hero-background {
   color: black;
-  font-size: 7rem;
+  font-size: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -673,6 +673,10 @@ img {
 
   .text-blk.name {
     font-size: 17px;
+    margin-top: 30px;
+  }
+  .profile-img {
+    margin-top: 30px;
   }
 }
 
@@ -777,9 +781,9 @@ img {
 
 /*Total responsiveness*/
 
-@media (max-width: 523px) {
-  .main-hero-background {
-    font-size: 2rem;
+@media (max-width: 720px) {
+  .main-hero-background h1 {
+    font-size: 5rem;
   }
 }
 
