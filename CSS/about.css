@@ -199,4 +199,15 @@
     font-size: 5rem;
   }
 }
+.abhi-circle {
+  background: url(../Images/profile.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+  box-shadow: 3px 3px 20px yellow;
+}
 
