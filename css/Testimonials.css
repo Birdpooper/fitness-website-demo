@@ -7,7 +7,7 @@
   color: white;
   height: 50vh;
   text-shadow: 3px 3px 10px black;
-  background: url(../Images/pexels-lukas-669584.jpg);
+  background: url(../Images/pic1.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -194,8 +194,9 @@ section .title::after {
   background: #fff;
   transform: translateX(-50%);
 }
-
-
+.title{
+  margin-left: 100000px;
+}
 .center h2 {
   margin-left: 550px;
 }

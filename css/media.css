@@ -7,9 +7,10 @@
   color: white;
   height: 50vh;
   text-shadow: 3px 3px 10px black;
-  background: url(../Images/big.jpg);
+  background: url(../Images/pic3.jpg);
   background-position: center;
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
