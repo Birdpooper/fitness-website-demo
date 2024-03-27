@@ -39,8 +39,6 @@
   color: black;
 }
 
-
-
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
@@ -170,7 +168,6 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-
 }
 
 section .title::before {
@@ -207,7 +204,6 @@ footer .icons a i {
   padding: 25px;
   border-radius: 8px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.603);
-  ;
   margin-left: 30%;
   margin-right: 50%;
 }
@@ -302,7 +298,7 @@ footer .icons a i {
   }
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .main-hero-background {
     font-size: 40px;
   }

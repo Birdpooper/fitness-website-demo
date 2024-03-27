@@ -7,7 +7,7 @@
   color: white;
   height: 50vh;
   text-shadow: 3px 3px 10px black;
-  background: url(../Images/pic1.jpg);
+  background: url(../Images/background2.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -38,8 +38,6 @@
   background-color: white;
   color: black;
 }
-
-
 
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -170,7 +168,6 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-
 }
 
 section .title::before {
@@ -194,7 +191,7 @@ section .title::after {
   background: #fff;
   transform: translateX(-50%);
 }
-.title{
+.title {
   margin-left: 100000px;
 }
 .center h2 {
@@ -254,13 +251,13 @@ footer .icons a i {
 .bar-5 {
   width: 110%;
   height: 18px;
-  background-color: #04AA6D;
+  background-color: #04aa6d;
 }
 
 .bar-4 {
   width: 15%;
   height: 18px;
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .bar-3 {
@@ -282,7 +279,6 @@ footer .icons a i {
 }
 
 @media (max-width: 400px) {
-
   .side,
   .middle {
     width: 100%;
@@ -293,8 +289,7 @@ footer .icons a i {
   }
 }
 
-
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .main-hero-background h1 {
     font-size: 90px;
   }
