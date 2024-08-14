@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../CSS/book.css" />
     <link rel="stylesheet" href="../css/footer.css" />
@@ -127,11 +128,61 @@
       </div>
     </div>
 
+    <script>
+      $(document).ready(function () {
+        $("#bookingForm").on("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          // Capture form data
+          const formData = {
+            firstname: $("#firstname").val(),
+            lastname: $("#lastname").val(),
+            age: $("#age").val(),
+            gender: $("#gender").val(),
+            email: $("#email").val(),
+          };
+
+          // Data validation (basic example)
+          if (
+            !formData.firstname ||
+            !formData.lastname ||
+            !formData.age ||
+            !formData.gender ||
+            !formData.email
+          ) {
+            alert("Please fill in all fields.");
+            return;
+          }
+
+          // Store data in localStorage
+          localStorage.setItem("bookingFormData", JSON.stringify(formData));
+
+          // Provide feedback
+          $("#output").html(`<p>Form data stored successfully!</p>`);
+        });
+
+        // Optionally, you can display stored data on page load
+        const storedData = localStorage.getItem("bookingFormData");
+        if (storedData) {
+          const data = JSON.parse(storedData);
+          $("#output").html(`
+                <p><strong>Stored Data:</strong></p>
+                <p>Firstname: ${data.firstname}</p>
+                <p>Lastname: ${data.lastname}</p>
+                <p>Age: ${data.age}</p>
+                <p>Gender: ${data.gender}</p>
+                <p>Email: ${data.email}</p>
+            `);
+        }
+      });
+    </script>
+
     <div class="wow">
       <!----------------------------- Form box ----------------------------------->
       <div class="form-box">
         <!------------------- login form -------------------------->
 
+        <!-- Book a Trial Section -->
         <div class="login-container" id="next">
           <div class="top">
             <span
@@ -139,41 +190,80 @@
             >
             <header>Book a Trial</header>
           </div>
-          <div class="two-forms">
-            <div class="input-box">
-              <input type="text" class="input-field" placeholder="Firstname" />
-              <i class="bx bx-user"></i>
+          <form id="bookingForm">
+            <div class="two-forms">
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  class="input-field"
+                  placeholder="Firstname"
+                  required
+                />
+                <i class="bx bx-user"></i>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  class="input-field"
+                  placeholder="Lastname"
+                  required
+                />
+                <i class="bx bx-user"></i>
+              </div>
             </div>
             <div class="input-box">
-              <input type="text" class="input-field" placeholder="Lastname" />
-              <i class="bx bx-user"></i>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                class="input-field"
+                placeholder="Age"
+                required
+              />
+              <i class="bx bx-child"></i>
             </div>
-          </div>
-          <div class="input-box">
-            <input type="text" class="input-field" placeholder="Age" />
-            <i class="bx bx-child"></i>
-          </div>
-          <div class="input-box">
-            <input type="text" class="input-field" placeholder="Gender" />
-            <i class="bx bx-male-female"></i>
-          </div>
-          <div class="input-box">
-            <input type="text" class="input-field" placeholder="Email" />
-            <i class="bx bx-envelope"></i>
-          </div>
+            <div class="input-box">
+              <input
+                type="text"
+                id="gender"
+                name="gender"
+                class="input-field"
+                placeholder="Gender"
+                required
+              />
+              <i class="bx bx-male-female"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-field"
+                placeholder="Email"
+                required
+              />
+              <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+              <input type="submit" id="submit" class="submit" value="Submit" />
+            </div>
+            <div class="two-col">
+              <div class="one">
+                <input type="checkbox" id="register-check" />
+                <label for="register-check"> Remember Me</label>
+              </div>
+              <div class="two">
+                <label><a href="#">Terms & conditions</a></label>
+              </div>
+            </div>
+          </form>
 
-          <div class="input-box">
-            <input type="submit" class="submit" value="Submit" />
-          </div>
-          <div class="two-col">
-            <div class="one">
-              <input type="checkbox" id="register-check" />
-              <label for="register-check"> Remember Me</label>
-            </div>
-            <div class="two">
-              <label><a href="#">Terms & conditions</a></label>
-            </div>
-          </div>
+          <!--Data Storage Locally-->
+          <!-- <div id="output"></div> -->
         </div>
 
         <!------------------- question form -------------------------->

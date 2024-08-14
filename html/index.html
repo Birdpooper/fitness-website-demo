@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../CSS/index.css" />
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/video.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | PT
     Transformer</title>
@@ -436,31 +437,83 @@ Rakesh Karki believes in creating a fun and supportive environment for his clien
           </div>
         </div>
         <div class="column right">
-          <div class="text">Message me</div>
-          <form action="#">
-            <div class="fields">
-              <div class="field name">
-                <input type="text" placeholder="Name" required>
-              </div>
-              <div class="field email">
-                <input type="email" placeholder="Email" required>
-              </div>
-            </div>
-            <div class="field">
-              <input type="text" placeholder="Subject" required>
-            </div>
-            <div class="field textarea">
-              <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-            </div>
-            <div class="button-area">
-              <button type="submit">Send message</button>
-            </div>
-          </form>
-        </div>
+                    <div class="text">Message me</div>
+                    <form id="contactForm">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required id="name">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required id="email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required id="subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required id="message"></textarea>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" id="submit" class="submit" value="Submit" />
+                        </div>
+                    </form>
+                    <!-- Placeholder for output -->
+                    <div id="output"></div>
+                </div>
       </div>
     </div>
   </section>
-         
+
+ <script>
+      $(document).ready(function () {
+        $("#contactForm").on("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          // Capture form data
+          const formData = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            subject: $("#subject").val(),
+            message: $("#message").val(),
+          };
+
+          // Data validation (basic example)
+          if (
+            !formData.name ||
+            !formData.email ||
+            !formData.subject ||
+            !formData.message 
+          ) {
+            alert("Please fill in all fields.");
+            return;
+          }
+
+          // Store data in localStorage
+          localStorage.setItem("contactFormData", JSON.stringify(formData));
+
+          // Provide feedback
+          $("#output").html(`<p>Form data stored successfully!</p>`);
+
+          // Optionally, clear the form fields
+          $("#contactForm")[0].reset();
+        });
+
+        // Optionally, you can display stored data on page load
+        const storedData = localStorage.getItem("contactFormData");
+        if (storedData) {
+          const data = JSON.parse(storedData);
+          $("#output").html(`
+                <p><strong>Stored Data:</strong></p>
+                <p>name: ${data.name}</p>
+                <p>email: ${data.email}</p>
+                <p>subject: ${data.subject}</p>
+                <p>message: ${data.message}</p>
+            `);
+        }
+      });
+    </script>
+
+
 
 
   <!--Footer-->
