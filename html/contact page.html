@@ -138,15 +138,30 @@
       <form action="#" class="form">
         <div class="input-box">
           <label>Full Name</label>
-          <input type="text" placeholder="Enter full name" required />
+          <input
+            type="text"
+            placeholder="Enter full name"
+            required
+            id="fullname"
+          />
         </div>
         <div class="input-box">
           <label>Email Address</label>
-          <input type="text" placeholder="Enter email address" required />
+          <input
+            type="text"
+            placeholder="Enter email address"
+            required
+            id="email"
+          />
         </div>
         <div class="input-box">
           <label>Phone Number</label>
-          <input type="number" placeholder="Enter phone number" required />
+          <input
+            type="number"
+            placeholder="Enter phone number"
+            required
+            id="phone"
+          />
         </div>
         <br />
         <center>
@@ -155,27 +170,51 @@
         <div class="column">
           <div class="input-box">
             <label>Date</label>
-            <input type="date" placeholder="Enter Meet-up Date" required />
+            <input
+              type="date"
+              placeholder="Enter Meet-up Date"
+              required
+              id="date"
+            />
           </div>
           <div class="input-box">
             <label>Time</label>
-            <input type="time" placeholder="Enter Time" required />
+            <input type="time" placeholder="Enter Time" required id="time" />
           </div>
         </div>
 
         <div class="input-box address">
           <label>Address</label>
-          <input type="text" placeholder="Enter street address" required />
           <input
             type="text"
-            placeholder="Enter street address line 2"
+            placeholder="Enter street address"
             required
+            id="address"
+          />
+          <input
+            type="text"
+            placeholder="Enter street address line 2 (Optional)"
+            id="address2"
           />
         </div>
-        <button>Submit</button>
+        <button onclick="sendMail()">Submit</button>
       </form>
     </section>
     <br />
+
+    <!--Email Script-->
+    <script src="../javascript/contact.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "lndQqonRilSb4AsOz",
+        });
+      })();
+    </script>
 
     <!--Footer-->
 

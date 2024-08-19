@@ -128,7 +128,7 @@
       </div>
     </div>
 
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $("#bookingForm").on("submit", function (event) {
           event.preventDefault(); // Prevent the default form submission
@@ -175,6 +175,20 @@
             `);
         }
       });
+    </script> -->
+
+    <!--Email Script-->
+    <script src="../javascript/book.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "lndQqonRilSb4AsOz",
+        });
+      })();
     </script>
 
     <div class="wow">
@@ -249,7 +263,13 @@
               <i class="bx bx-envelope"></i>
             </div>
             <div class="input-box">
-              <input type="submit" id="submit" class="submit" value="Submit" />
+              <input
+                type="submit"
+                id="submit"
+                class="submit"
+                value="Submit"
+                onclick="sendMail()"
+              />
             </div>
             <div class="two-col">
               <div class="one">
@@ -393,11 +413,11 @@
             <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
             <li><a href="../HTML/body-fat.html">BMR Calc</a></li>
           </ul>
-          <ul class="box">
+          <!-- <ul class="box">
             <li class="link_name">Account</li>
             <li><a href="../php/login.php">Profile</a></li>
             <li><a href="../php/login.php">My account</a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
       <div class="bottom-details">

@@ -113,9 +113,10 @@
   </div>
   </center><br>
 
-<center>
+  <!--Book a Trial-->
+<!-- <center>
     <button><a href="../html/book.html">Book Now</a></button>
-</center>
+</center> -->
 
   <!--Services-->
   <div class="div-for-services-text">Our Services</div>
@@ -454,17 +455,17 @@ Rakesh Karki believes in creating a fun and supportive environment for his clien
                             <textarea cols="30" rows="10" placeholder="Message.." required id="message"></textarea>
                         </div>
                         <div class="input-box">
-                            <input type="submit" id="submit" class="submit" value="Submit" />
+                            <input type="submit" id="submit" class="submit" value="Submit" onclick="sendMail()"/>
                         </div>
                     </form>
                     <!-- Placeholder for output -->
-                    <div id="output"></div>
+                    <!-- <div id="output"></div> -->
                 </div>
       </div>
     </div>
   </section>
 
- <script>
+ <!-- <script>
       $(document).ready(function () {
         $("#contactForm").on("submit", function (event) {
           event.preventDefault(); // Prevent the default form submission
@@ -511,10 +512,20 @@ Rakesh Karki believes in creating a fun and supportive environment for his clien
             `);
         }
       });
-    </script>
+    </script> -->
 
-
-
+        <!--Email Script-->
+    <script src="../javascript/email.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "lndQqonRilSb4AsOz",
+      });
+   })();
+</script>
 
   <!--Footer-->
 
@@ -554,11 +565,11 @@ Rakesh Karki believes in creating a fun and supportive environment for his clien
           <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
           <li><a href="../HTML/body-fat.html">BMR Calc</a></li>
         </ul>
-        <ul class="box">
+        <!-- <ul class="box">
           <li class="link_name">Account</li>
           <li><a href="../php/login.php">Profile</a></li>
           <li><a href="../php/login.php">My account</a></li>
-        </ul>
+        </ul> -->
 
 
       </div>
