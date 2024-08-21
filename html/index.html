@@ -113,9 +113,16 @@
     </div>
   </center><br>
 
+<<<<<<< HEAD
   <center>
     <button><a href="../html/book.html">Book Now</a></button>
   </center>
+=======
+  <!--Book a Trial-->
+<!-- <center>
+    <button><a href="../html/book.html">Book Now</a></button>
+</center> -->
+>>>>>>> 88935d81684b6c88a122f1caa8554b6792dc011e
 
   <!--Services-->
   <div class="div-for-services-text">Our Services</div>
@@ -453,6 +460,7 @@
           </div>
         </div>
         <div class="column right">
+<<<<<<< HEAD
           <div class="text" action=”mailto:contact@yourdomain.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
             Message me</div>
           <form id="contactForm">
@@ -477,14 +485,46 @@
           <!-- Placeholder for output -->
           <div id="output"></div>
         </div>
+=======
+                    <div class="text">Message me</div>
+                    <form id="contactForm">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required id="name">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required id="email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required id="subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required id="message"></textarea>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" id="submit" class="submit" value="Submit" onclick="sendMail()"/>
+                        </div>
+                    </form>
+                    <!-- Placeholder for output -->
+                    <!-- <div id="output"></div> -->
+                </div>
+>>>>>>> 88935d81684b6c88a122f1caa8554b6792dc011e
       </div>
     </div>
   </section>
 
+<<<<<<< HEAD
   <script>
     $(document).ready(function () {
       $("#contactForm").on("submit", function (event) {
         event.preventDefault(); // Prevent the default form submission
+=======
+ <!-- <script>
+      $(document).ready(function () {
+        $("#contactForm").on("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+>>>>>>> 88935d81684b6c88a122f1caa8554b6792dc011e
 
         // Capture form data
         const formData = {
@@ -526,12 +566,30 @@
                 <p>subject: ${data.subject}</p>
                 <p>message: ${data.message}</p>
             `);
+<<<<<<< HEAD
       }
     });
   </script>
 
 
+=======
+        }
+      });
+    </script> -->
+>>>>>>> 88935d81684b6c88a122f1caa8554b6792dc011e
 
+        <!--Email Script-->
+    <script src="../javascript/email.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "lndQqonRilSb4AsOz",
+      });
+   })();
+</script>
 
   <!--Footer-->
 
@@ -571,11 +629,11 @@
           <li><a href="../HTML/bmi-calculator.html">BMI Calc</a></li>
           <li><a href="../HTML/body-fat.html">BMR Calc</a></li>
         </ul>
-        <ul class="box">
+        <!-- <ul class="box">
           <li class="link_name">Account</li>
           <li><a href="../php/login.php">Profile</a></li>
           <li><a href="../php/login.php">My account</a></li>
-        </ul>
+        </ul> -->
 
 
       </div>
